@@ -30,64 +30,69 @@ import Layout from '../layouts/Layout.astro';
 
   <div class="cards-grid">
 
-    <!-- G3X -->
-    <div class="card">
-      <a href="/g3x/historia" class="card-img" style="background:linear-gradient(135deg,#7f1d1d,#1e1b4b);">🎮</a>
-      <div class="card-body">
-        <a href="/g3x/historia"><h4>G3X</h4></a>
-        <p>Fundado em 2001 por Gaules no CS 1.6. Hoje é o time do povo na Kings League e campeão mundial 2026.</p>
-        <div class="card-links">
-          <a href="/g3x/historia">📄 História →</a>
-          <a href="/g3x/elenco">👥 Elenco →</a>
-          <a href="/g3x/titulos">🏆 Títulos →</a>
-          <a href="/g3x/resultados">📊 Resultados →</a>
-        </div>
+  <div class="card">
+    <a href="/g3x/historia" class="card-img-link">
+      <img src="/cards/g3x.jpg" alt="G3X" class="card-photo" />    
+    </a>
+    <div class="card-body">
+      <a href="/g3x/historia"><h4>G3X</h4></a>
+      <p>Fundado em 2001 por Gaules no CS 1.6. Hoje é o time do povo na Kings League e campeão mundial 2026.</p>
+      <div class="card-links">
+        <a href="/g3x/historia">📄 História →</a>
+        <a href="/g3x/elenco">👥 Elenco →</a>
+        <a href="/g3x/titulos">🏆 Títulos →</a>
+        <a href="/g3x/resultados">📊 Resultados →</a>
       </div>
     </div>
-
-    <!-- Kings League -->
-    <div class="card">
-      <a href="/kings-league/overview" class="card-img" style="background:linear-gradient(135deg,#14532d,#1e3a8a);">👑</a>
-      <div class="card-body">
-        <a href="/kings-league/overview"><h4>Kings League</h4></a>
-        <p>Futebol 7 + entretenimento. G3X FC foi campeão da Kings World Cup Clubs 2026 em Milão (9×5 Alpak).</p>
-        <div class="card-links">
-          <a href="/kings-league/overview">📜 Visão geral →</a>
-          <a href="/g3x/resultados">📊 Resultados →</a>
-          <a href="/g3x/elenco">👥 Elenco G3X →</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Counter-Strike 2 -->
-    <div class="card">
-      <a href="/cs2/overview" class="card-img" style="background:linear-gradient(135deg,#1e3a8a,#0f172a);">🔫</a>
-      <div class="card-body">
-        <a href="/cs2/overview"><h4>Counter-Strike 2</h4></a>
-        <p>O FPS que move a Tribo. Gaules transmite diariamente e já montou dream team com FalleN, KSCERATO e mais.</p>
-        <div class="card-links">
-          <a href="/cs2/overview">📘 Visão geral →</a>
-          <a href="/gaules/biografia">🎙️ Gaules →</a>
-          <a href="/cs2/mapas"> Mapas →</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Universo da Tribo -->
-    <div class="card">
-      <a href="/tribo/cultura" class="card-img" style="background:linear-gradient(135deg,#312e81,#1e1b4b);">❤️</a>
-      <div class="card-body">
-        <a href="/tribo/cultura"><h4>Universo da Tribo</h4></a>
-        <p>Gaules, Liminha, BT, Apoka, Lett, Velho Vamp e milhões de mulas. Cultura, memes e “A Tribo cuida da Tribo”.</p>
-        <div class="card-links">
-          <a href="/gaules/biografia">🎙️ Gaules →</a>
-          <a href="/glossario">💬 Bordões →</a>
-          <a href="/tribo/cultura">❤️ Cultura →</a>
-        </div>
-      </div>
-    </div>
-
   </div>
+
+  <div class="card">
+    <a href="/kings-league/overview" class="card-img-link">
+      <img src="/cards/kl.jpg" alt="Kings League" class="card-photo" />
+    </a>
+    <div class="card-body">
+      <a href="/kings-league/overview"><h4>Kings League</h4></a>
+      <p>Futebol 7 + entretenimento. G3X FC foi campeão da Kings World Cup Clubs 2026 em Milão (9×5 Alpak).</p>
+      <div class="card-links">
+        <a href="/kings-league/overview">📜 Visão geral →</a>
+        <a href="/g3x/resultados">📊 Resultados →</a>
+        <a href="/g3x/elenco">👥 Elenco G3X →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href="/cs2/overview" class="card-img-link">
+      <img src="/cards/cs2.jpg" alt="Counter-Strike 2" class="card-photo" />
+    </a>
+    <div class="card-body">
+      <a href="/cs2/overview"><h4>Counter-Strike 2</h4></a>
+      <p>O FPS que move a Tribo. Gaules transmite diariamente e já montou dream team com FalleN, KSCERATO e mais.</p>
+      <div class="card-links">
+        <a href="/cs2/overview">📘 Visão geral →</a>
+        <a href="/cs2/mapas">🗺️ Mapas →</a>
+        <a href="/gaules/biografia">🎙️ Gaules →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href="/tribo/cultura" class="card-img-link">
+      <img src="/cards/tribo.jpg" alt="Universo da Tribo" class="card-photo" />
+    </a>
+    <div class="card-body">
+      <a href="/tribo/cultura"><h4>Universo da Tribo</h4></a>
+      <p>Gaules, Liminha, BT, Apoka, BIA, Velho Vamp e milhões de mulas. Cultura, memes e “A Tribo cuida da Tribo”.</p>
+      <div class="card-links">
+        <a href="/gaules/biografia">🎙️ Gaules →</a>
+        <a href="/glossario">💬 Bordões →</a>
+        <a href="/tribo/cultura">❤️ Cultura →</a>
+        <a href="/tribo/socio-sofredor">🎫 Sócio Sofredor →</a>
+      </div>
+    </div>
+  </div>
+
+</div>
 </section>
 
   <!-- Últimos artigos -->

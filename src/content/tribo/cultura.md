@@ -67,6 +67,7 @@ Clique para conhecer cada um:
     <div class="info">
       <div class="name">Apoka</div>
       <div class="position">Streamer / Auxiliar G3X</div>
+         <span class="badge">A A A A</span>
     </div>
   </a>
 
