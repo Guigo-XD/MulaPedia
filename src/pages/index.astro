@@ -1,16 +1,129 @@
 ---
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Início">
+
+ <!-- Hero -->
+<section class="hero">
+  <div class="hero-mascot">🫏</div>
+
+  <div class="hero-content">
+    <h2>Mula<span>Pédia</span></h2>
+    <p>A enciclopédia não oficial da Tribo — G3X, Kings League, CS2, Gaules e a maior comunidade do Brasil.</p>
+  </div>
+
+  <div class="hero-tags">
+    <span>INFORMAÇÃO</span>
+    <span>JOGO</span>
+    <span>COMUNIDADE</span>
+    <span>TRIBO 👑</span>
+  </div>
+</section>
+
+  <!-- Principais áreas -->
+  <section>
+    <div class="section-header">
+      <h3>⭐ Principais áreas</h3>
+      <a href="/g3x/historia">Ver todas as áreas →</a>
+    </div>
+
+    <div class="cards-grid">
+      <a href="/g3x/historia" class="card">
+        <div class="card-img" style="background:linear-gradient(135deg,#7f1d1d,#1e1b4b);"> <img src="src\assests\g3x.png" alt="G3X Logo"> </div>
+        <div class="card-body">
+          <h4>G3X</h4>
+          <p>Fundado em 2001 por Gaules no CS 1.6. Hoje é o time do povo na Kings League e campeão mundial 2026.</p>
+          <div class="card-links">
+            <span>📄 História →</span>
+            <span>👥 Elenco →</span>
+            <span>🏆 Títulos →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/kings-league/overview" class="card">
+        <div class="card-img" style="background:linear-gradient(135deg,#14532d,#1e3a8a);">👑</div>
+        <div class="card-body">
+          <h4>Kings League</h4>
+          <p>Futebol 7 + entretenimento. G3X FC foi campeão da Kings World Cup Clubs 2026 em Milão (9×5 Alpak).</p>
+          <div class="card-links">
+            <span>📜 Regras →</span>
+            <span>🏆 Kings Cup →</span>
+            <span>📊 Classificação →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/cs2/overview" class="card">
+        <div class="card-img" style="background:linear-gradient(135deg,#1e3a8a,#0f172a);">🔫</div>
+        <div class="card-body">
+          <h4>Counter-Strike 2</h4>
+          <p>O FPS que move a Tribo. Gaules transmite diariamente e já montou dream team com FalleN, KSCERATO e mais.</p>
+          <div class="card-links">
+            <span>🗺️ Mapas →</span>
+            <span>💰 Economia →</span>
+            <span>🏆 Campeonatos →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/tribo/cultura" class="card">
+        <div class="card-img" style="background:linear-gradient(135deg,#312e81,#1e1b4b);">❤️</div>
+        <div class="card-body">
+          <h4>Universo da Tribo</h4>
+          <p>Gaules, Liminha, BT, Apoka, Lett, Velho Vamp e milhões de mulas. Cultura, memes e “A Tribo cuida da Tribo”.</p>
+          <div class="card-links">
+            <span>🎙️ Gaules →</span>
+            <span>💬 Bordões →</span>
+            <span>📖 Glossário →</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Últimos artigos -->
+  <section>
+    <div class="section-header">
+      <h3>📄 Últimos artigos</h3>
+      <a href="/g3x/historia">Ver todos os artigos →</a>
+    </div>
+
+    <div class="articles-grid">
+      <a href="/g3x/historia" class="article-card">
+        <div class="article-img" style="background:linear-gradient(135deg,#7f1d1d,#1e1b4b);">📜</div>
+        <div class="article-body">
+          <h5>História do G3X</h5>
+          <p>Do CS 1.6 em 2001 ao título mundial de fut7 em 2026</p>
+          <div class="article-date">Atualizado out 2026</div>
+        </div>
+      </a>
+      <a href="/kings-league/overview" class="article-card">
+        <div class="article-img" style="background:linear-gradient(135deg,#14532d,#1e3a8a);">🏆</div>
+        <div class="article-body">
+          <h5>G3X Campeão Mundial 2026</h5>
+          <p>9×5 no Alpak em Milão — Kelvin artilheiro com 14 gols</p>
+          <div class="article-date">1 de ago de 2026</div>
+        </div>
+      </a>
+      <a href="/g3x/elenco" class="article-card">
+        <div class="article-img" style="background:linear-gradient(135deg,#1e3a8a,#0f172a);">👥</div>
+        <div class="article-body">
+          <h5>Elenco G3X Kings Cup 2026</h5>
+          <p>Após o Draft — veja todos os jogadores</p>
+          <div class="article-date">out 2026</div>
+        </div>
+      </a>
+      <a href="/glossario" class="article-card">
+        <div class="article-img" style="background:linear-gradient(135deg,#312e81,#1e1b4b);">📖</div>
+        <div class="article-body">
+          <h5>Dicionário de Bordões</h5>
+          <p>Lei de Gaules, Sapo Cego, Pede Liminha e muito mais</p>
+          <div class="article-date">mar 2026</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+</Layout>
