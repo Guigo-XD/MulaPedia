@@ -13,6 +13,17 @@ updatedDate: 2026-10-15
       <div class="position">Presidente · Atacante</div>
       <span class="badge gold">K9</span>
     </div>
+     <div class="profile-socials">
+      <a class="twitch" href="https://www.twitch.tv/kelvin_k9" target="_blank" rel="noopener noreferrer">
+        🟣 Twitch
+      </a>
+      <a class="kick" href="https://kick.com/kelvin-k9" target="_blank" rel="noopener noreferrer">
+        🟢 Kick
+      </a>
+      <a class="youtube" href="https://www.youtube.com/@KelvinK9Oliveira" target="_blank" rel="noopener noreferrer">
+        ▶️ YouTube
+      </a>
+    </div>
   </div>
   <div class="player-profile-body">
     <h2>Biografia</h2>

@@ -153,7 +153,7 @@ updatedDate: 2026-10-14
 
 <div class="players-grid">
 
-  <div class="player-card">
+ <a href="/g3x/jogadores/aleix-marti" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">🔥</div>
     <div class="info">
       <div class="name">Aleix Martí</div>
@@ -161,23 +161,23 @@ updatedDate: 2026-10-14
       <span class="badge gold">36 gols na Spain</span>
           <span class="badge gold">WC</span>
     </div>
-  </div>
+  </a>
 
-  <div class="player-card">
+ <a href="/g3x/jogadores/danilo-silva" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">⚡</div>
     <div class="info">
       <div class="name">Danilo Silva</div>
       <div class="position">Atacante</div>
       <span class="badge">Pick 1 do Draft</span>
     </div>
-  </div>
+    </a>
 
-  <div class="player-card">
+  <a href="/g3x/jogadores/marcos-niniu" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">⚡</div>
     <div class="info">
       <div class="name">Marcos Niniu</div>
       <div class="position">Atacante</div>
     </div>
-  </div>
+   </a>
 
 </div>
