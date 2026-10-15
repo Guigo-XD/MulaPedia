@@ -72,10 +72,11 @@ Clique para conhecer cada um:
   </a>
 
   <a href="/tribo/mch" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">🎯</div>
+    <div class="placeholder">🚬</div>
     <div class="info">
       <div class="name">mch</div>
       <div class="position">Caster / Analista</div>
+       <span class="badge">🚬</span>
     </div>
   </a>
 

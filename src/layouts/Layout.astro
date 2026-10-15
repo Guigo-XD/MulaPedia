@@ -53,9 +53,10 @@ const currentPath = Astro.url.pathname;
     <nav class="nav">
       <a href="/" class={currentPath === '/' ? 'active' : ''}>🏠 Início</a>
       <a href="/g3x/historia" class={currentPath.includes('/g3x') ? 'active' : ''}>🎮 G3X</a>
-      <a href="/g3x/elenco" class={currentPath.includes('/elenco') ? 'active' : ''}>👥 Elenco</a>
       <a href="/kings-league/overview" class={currentPath.includes('/kings') ? 'active' : ''}>👑 Kings League</a>
+      <a href="/kings-league/overview" class={currentPath.includes('/kings') ? 'active' : ''}>👑 Queens League</a>
       <a href="/cs2/overview" class={currentPath.includes('/cs2') ? 'active' : ''}>🔫 Counter-Strike 2</a>
+      <a href="/tribo/socio-sofredor" class={currentPath.includes('/socio-sofredor') ? 'active' : ''}>🎫 Sócio Sofredor</a>
       <a href="/gaules/biografia" class={currentPath.includes('/gaules') ? 'active' : ''}>🎙️ Gaules</a>
       <a href="/tribo/cultura" class={currentPath.includes('/tribo') ? 'active' : ''}>👥 Comunidade</a>
       <a href="/glossario" class={currentPath.includes('/glossario') ? 'active' : ''}>📖 Glossário</a>

@@ -11,6 +11,78 @@ updatedDate: 2026-10-14
   <strong>Campanha mundial:</strong> 5 vitórias em 5 jogos (invicto)
 </div>
 
+
+## Kings Cup Brazil 2026
+
+<div class="matches-grid">
+
+  <div class="match-card">
+    <div class="match-competition">Próximos jogos</div>
+    <div class="match-teams">
+      <div class="match-team home">G3X FC</div>
+      <div class="match-score">— <span class="x">×</span> —</div>
+      <div class="match-team away">Dendele</div>
+    </div>
+    <div class="match-meta">
+      <span>19-Out 2026</span>
+      <span class="match-badge">21:00h</span>
+    </div>
+  </div>
+
+  <div class="match-card">
+    <div class="match-competition">Próximos jogos</div>
+    <div class="match-teams">
+      <div class="match-team home">Nyvelados</div>
+      <div class="match-score">— <span class="x">×</span> —</div>
+      <div class="match-team away">G3X</div>
+    </div>
+    <div class="match-meta">
+      <span>26-Out 2026</span>
+      <span class="match-badge">18:00h</span>
+    </div>
+  </div>
+  
+  <div class="match-card">
+    <div class="match-competition">Próximos jogos</div>
+    <div class="match-teams">
+      <div class="match-team home">G3X</div>
+      <div class="match-score">— <span class="x">×</span> —</div>
+      <div class="match-team away">Dibrados</div>
+    </div>
+    <div class="match-meta">
+      <span>02-Nov 2026</span>
+      <span class="match-badge">21:00h</span>
+    </div>
+  </div>
+
+  <div class="match-card">
+    <div class="match-competition">Próximos jogos</div>
+    <div class="match-teams">
+      <div class="match-team home">G3X</div>
+      <div class="match-score">— <span class="x">×</span> —</div>
+      <div class="match-team away">Desimpain</div>
+    </div>
+    <div class="match-meta">
+      <span>09-Nov 2026</span>
+      <span class="match-badge">18:00h</span>
+    </div>
+  </div>
+
+  <div class="match-card">
+    <div class="match-competition">Próximos jogos</div>
+    <div class="match-teams">
+      <div class="match-team home">G3X</div>
+      <div class="match-score">— <span class="x">×</span> —</div>
+      <div class="match-team away">Capim</div>
+    </div>
+    <div class="match-meta">
+      <span>16-Nov 2026</span>
+      <span class="match-badge">20:00h</span>
+    </div>
+  </div>
+</div>
+---
+
 ## Kings World Cup Clubs 2026
 
 **Local:** Milão, Itália · **Campeão** 🏆
@@ -133,25 +205,6 @@ updatedDate: 2026-10-14
 | 2024 | Kings World Cup Clubs | Vice-campeão 🥈 |
 | 2026 | Kings Cup Brazil | Em andamento |
 
----
 
-## Kings Cup Brazil 2026
 
-<div class="matches-grid">
 
-  <div class="match-card">
-    <div class="match-competition">Próximos jogos</div>
-    <div class="match-teams">
-      <div class="match-team home">G3X FC</div>
-      <div class="match-score">— <span class="x">×</span> —</div>
-      <div class="match-team away">A definir</div>
-    </div>
-    <div class="match-meta">
-      <span>Out 2026</span>
-      <span class="match-badge">Em breve</span>
-    </div>
-  </div>
-
-</div>
-
-*Atualize os cards a cada rodada da Kings Cup.*

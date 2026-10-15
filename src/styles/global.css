@@ -908,7 +908,7 @@ a {
 /* Imagem do card no hover */
 .card:hover .card-img {
   filter: brightness(1.08);
-
+}
   /* Footer */
   .footer {
     background: #070b14;
@@ -923,6 +923,235 @@ a {
   .footer strong {
     color: white;
   }
+  /* ============================================
+   RESPONSIVO — TABLET E CELULAR
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  /* Sidebars escondidas no tablet/mobile (conteúdo principal em foco) */
+  .sidebar-left,
+  .sidebar-right {
+    display: none;
+  }
+
+  .cards-grid,
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-wrap,
+  .search-box {
+    max-width: 280px;
+    margin: 0 12px;
+  }
+}
+
+/* Celular */
+@media (max-width: 700px) {
+  /* Header */
+  .header {
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+  }
+
+  .logo-text span {
+    display: none; /* esconde subtítulo no mobile */
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  /* Busca ocupa linha inteira no mobile */
+  .search-wrap,
+  .search-box {
+    order: 3;
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .tribo-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .tribo-btn span {
+    display: none; /* só o texto principal do botão */
+  }
+
+  /* Navegação com scroll horizontal */
+  .nav {
+    padding: 0 8px;
+    gap: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav a {
+    padding: 12px 12px;
+    font-size: 13px;
+  }
+
+  /* Container */
+  .container {
+    padding: 12px;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 20px;
+    gap: 16px;
+    min-height: auto;
+  }
+
+  .hero-mascot {
+    width: 96px;
+    height: 96px;
+    font-size: 52px;
+  }
+
+  .hero-content h2 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .hero-tags {
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 12px;
+    font-size: 13px;
+  }
+
+  .hero-tags span {
+    display: inline;
+  }
+
+  .hero-tags span:not(:last-child)::after {
+    content: " · ";
+    opacity: 0.5;
+  }
+
+  /* Cards principais — 1 coluna */
+  .cards-grid,
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-img,
+  .card-img-link,
+  .card-photo {
+    height: 140px;
+  }
+
+  /* Conteúdo das páginas */
+  .content-page {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .content-page h1 {
+    font-size: 22px;
+  }
+
+  .content-page h2 {
+    font-size: 16px;
+  }
+
+  /* Elenco / players */
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .player-card img,
+  .player-card .placeholder {
+    height: 120px;
+  }
+
+  /* Resultados / placares */
+  .matches-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .match-teams {
+    flex-wrap: wrap;
+  }
+
+  .match-score {
+    font-size: 18px;
+    min-width: 60px;
+  }
+
+  /* Section headers */
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .section-header h3 {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 24px 16px;
+    font-size: 12px;
+  }
+
+  /* Tabelas (mapas, resultados etc.) */
+  .content-page table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 13px;
+  }
+
+  .info-box {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+}
+
+/* Celular bem pequeno */
+@media (max-width: 400px) {
+  .players-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+  .logo-text h1 {
+    font-size: 16px;
+  }
+}
 
   /* Responsive */
   @media (max-width: 1100px) {
