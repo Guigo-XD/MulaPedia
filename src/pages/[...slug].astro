@@ -15,7 +15,28 @@ const { Content } = await render(page);
 ---
 
 <Layout title={page.data.title} description={page.data.description}>
-  <a href="/" class="back-btn">← Voltar ao Início</a>
+  <button type="button" class="back-btn" id="btn-voltar">
+  ← Voltar
+</button>
+
+<script>
+  const btn = document.getElementById("btn-voltar");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      // Se veio de outra página do site, volta para ela
+      if (window.history.length > 1 && document.referrer) {
+        const ref = new URL(document.referrer);
+        // Só volta se o referrer for do mesmo site
+        if (ref.origin === window.location.origin) {
+          window.history.back();
+          return;
+        }
+      }
+      // Fallback: início
+      window.location.href = "/";
+    });
+  }
+</script>
 
   <article class="content-page" data-pagefind-body>
     <h1>{page.data.title}</h1>

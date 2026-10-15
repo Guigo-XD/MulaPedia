@@ -16,13 +16,13 @@ updatedDate: 2026-10-14
 
 <div class="players-grid">
 
-  <div class="player-card">
-    <img src="/players/gau-les.jpg" alt="Gaules" />
+<a href="/gaules/biografia" class="player-card" style="text-decoration:none;color:inherit;">
+<img src="/players/gau-les.jpg" alt="Gaules" />
     <div class="info">
       <div class="name">Gaules</div>
       <div class="position">Presidente</div>
     </div>
-  </div>
+</a>
 
   <div class="player-card">
     <img src="/players/k9.jpg" alt="Gelado" />
@@ -30,6 +30,7 @@ updatedDate: 2026-10-14
       <div class="name">Kelvin Oliveira</div>
       <div class="position">Presidente / Atacante</div>
       <span class="badge red">Lesionado</span>
+          <span class="badge gold">WC</span>
     </div>
   </div>
 
@@ -42,13 +43,13 @@ updatedDate: 2026-10-14
     </div>
   </div>
 
-  <div class="player-card">
-    <img src="/players/apoka.jpg" alt="apoka" />
+<a href="/g3x/comissao/apoka" class="player-card" style="text-decoration:none;color:inherit;">
+ <img src="/players/apoka.jpg" alt="apoka" />
     <div class="info">
       <div class="name">Ale Apoka</div>
       <div class="position">Auxiliar Técnico</div>
     </div>
-  </div>
+</a>
 
 </div>
 
@@ -70,6 +71,7 @@ updatedDate: 2026-10-14
       <div class="name">Josildo Barata</div>
       <div class="position">Goleiro</div>
       <span class="badge gold">Mundial 2026</span>
+          <span class="badge gold">WC</span>
     </div>
   </div>
 
@@ -85,6 +87,7 @@ updatedDate: 2026-10-14
       <div class="name">Wembley Luiz</div>
       <div class="position">Defensor</div>
       <span class="badge gold">Mundial 2026</span>
+          <span class="badge gold">WC</span>
     </div>
   </div>
 
@@ -110,14 +113,15 @@ updatedDate: 2026-10-14
 
 <div class="players-grid">
 
-  <div class="player-card">
-    <img src="/players/andreas-vaz.jpg" alt="Andreas Vaz" />
+<a href="/g3x/jogadores/andreas-vaz" class="player-card" style="text-decoration:none;color:inherit;">
+ <img src="/players/andreas-vaz.jpg" alt="Andreas Vaz" />
     <div class="info">
       <div class="name">Andreas Vaz</div>
       <div class="position">Meia</div>
       <span class="badge gold">Melhor do Mundial</span>
+       <span class="badge gold">WC</span>
     </div>
-  </div>
+</a>
 
   <div class="player-card">
     <div class="placeholder">⚙️</div>
@@ -155,6 +159,7 @@ updatedDate: 2026-10-14
       <div class="name">Aleix Martí</div>
       <div class="position">Atacante</div>
       <span class="badge gold">36 gols na Spain</span>
+          <span class="badge gold">WC</span>
     </div>
   </div>
 

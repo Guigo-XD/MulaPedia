@@ -54,12 +54,13 @@ const currentPath = Astro.url.pathname;
       <a href="/" class={currentPath === '/' ? 'active' : ''}>🏠 Início</a>
       <a href="/g3x/historia" class={currentPath.includes('/g3x') ? 'active' : ''}>🎮 G3X</a>
       <a href="/kings-league/overview" class={currentPath.includes('/kings') ? 'active' : ''}>👑 Kings League</a>
-      <a href="/kings-league/overview" class={currentPath.includes('/kings') ? 'active' : ''}>👑 Queens League</a>
+      <a href="/queens-league/overview" class={currentPath.includes('/queens') ? 'active' : ''}>👑 Queens League</a>
       <a href="/cs2/overview" class={currentPath.includes('/cs2') ? 'active' : ''}>🔫 Counter-Strike 2</a>
       <a href="/tribo/socio-sofredor" class={currentPath.includes('/socio-sofredor') ? 'active' : ''}>🎫 Sócio Sofredor</a>
       <a href="/gaules/biografia" class={currentPath.includes('/gaules') ? 'active' : ''}>🎙️ Gaules</a>
       <a href="/tribo/cultura" class={currentPath.includes('/tribo') ? 'active' : ''}>👥 Comunidade</a>
       <a href="/glossario" class={currentPath.includes('/glossario') ? 'active' : ''}>📖 Glossário</a>
+      <a href="/artigos">📄 Artigos</a>
     </nav>
 
     <!-- Main Layout -->
@@ -71,7 +72,7 @@ const currentPath = Astro.url.pathname;
           <div class="sidebar-title">🧭 Explorar a Tribo</div>
           <a href="/g3x/historia"><span class="icon">📜</span> Histórico</a>
           <a href="/tribo/socio-sofredor">🎫 Sócio Sofredor</a>
-          <a href="/g3x/elenco"><span class="icon">📋</span> Elencos</a>
+          <a href="/g3x/elencos"><span class="icon">📋</span> Elencos</a>
           <a href="/kings-league/overview"><span class="icon">🏆</span> Torneios</a>
           <a href="/g3x/resultados"><span class="icon">📊</span> Resultados</a>
           <a href="/glossario"><span class="icon">😂</span> Memes e bordões</a>

@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths({ paginate }) {
+  const pages = (await getCollection('pages')).sort((a, b) => {
+    const da = a.data.updatedDate ? new Date(a.data.updatedDate).getTime() : 0;
+    const db = b.data.updatedDate ? new Date(b.data.updatedDate).getTime() : 0;
+    return db - da;
+  });
+
+  return paginate(pages, { pageSize: 12 });
+}
+
+const { page } = Astro.props;
+---
+
+<Layout
+  title={page.currentPage === 1 ? 'Todos os artigos' : `Artigos — página ${page.currentPage}`}
+  description="Lista completa de páginas da MulaPédia"
+>
+  <button type="button" class="back-btn" id="btn-voltar">← Voltar</button>
+
+  <article class="content-page" data-pagefind-body>
+    <h1>📄 Todos os artigos</h1>
+    <p class="subtitle">
+      Página {page.currentPage} de {page.lastPage}
+      · {page.total} artigo{page.total === 1 ? '' : 's'}
+    </p>
+
+    <div class="articles-grid" style="margin-top: 24px;">
+      {page.data.map((item) => (
+        <a href={`/${item.id}`} class="article-card">
+          <div
+            class="article-img"
+            style="background:linear-gradient(135deg,#1e293b,#0f172a);"
+          >
+            {item.data.section === 'G3X' && '🎮'}
+            {item.data.section === 'Kings League' && '👑'}
+            {item.data.section === 'CS2' && '🔫'}
+            {item.data.section === 'Gaules' && '🎙️'}
+            {item.data.section === 'Tribo' && '❤️'}
+            {!item.data.section && '📄'}
+          </div>
+          <div class="article-body">
+            <h5>{item.data.title}</h5>
+            <p>{item.data.description || 'Artigo da MulaPédia'}</p>
+            <div class="article-date">
+              {item.data.section || 'Geral'}
+              {item.data.updatedDate &&
+                ` · ${new Date(item.data.updatedDate).toLocaleDateString('pt-BR')}`}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- Paginação -->
+    {page.lastPage > 1 && (
+      <nav class="pagination" aria-label="Paginação de artigos">
+        {page.url.prev ? (
+          <a href={page.url.prev} class="page-btn">← Anterior</a>
+        ) : (
+          <span class="page-btn disabled">← Anterior</span>
+        )}
+
+        <div class="page-numbers">
+          {Array.from({ length: page.lastPage }, (_, i) => i + 1).map((n) => (
+            <a
+              href={n === 1 ? '/artigos' : `/artigos/${n}`}
+              class:list={['page-num', n === page.currentPage && 'active']}
+            >
+              {n}
+            </a>
+          ))}
+        </div>
+
+        {page.url.next ? (
+          <a href={page.url.next} class="page-btn">Próxima →</a>
+        ) : (
+          <span class="page-btn disabled">Próxima →</span>
+        )}
+      </nav>
+    )}
+  </article>
+</Layout>
+
+<script>
+  const btn = document.getElementById('btn-voltar');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      if (window.history.length > 1 && document.referrer) {
+        try {
+          const ref = new URL(document.referrer);
+          if (ref.origin === window.location.origin) {
+            window.history.back();
+            return;
+          }
+        } catch {}
+      }
+      window.location.href = '/';
+    });
+  }
+</script>
