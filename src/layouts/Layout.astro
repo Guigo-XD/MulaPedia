@@ -1,5 +1,7 @@
 ---
+import Search from '../components/Search.astro';
 import '../styles/global.css';
+
 
 interface Props {
   title: string;
@@ -39,9 +41,7 @@ const currentPath = Astro.url.pathname;
         </div>
       </a>
 
-      <div class="search-box">
-        <input type="text" placeholder="Pesquisar na MulaPédia..." />
-      </div>
+      <Search />
 
       <a href="/tribo/cultura" class="tribo-btn">
         👑 A Tribo

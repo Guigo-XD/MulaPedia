@@ -17,7 +17,7 @@ const { Content } = await render(page);
 <Layout title={page.data.title} description={page.data.description}>
   <a href="/" class="back-btn">← Voltar ao Início</a>
 
-  <article class="content-page">
+  <article class="content-page" data-pagefind-body>
     <h1>{page.data.title}</h1>
     {page.data.description && (
       <p class="subtitle">{page.data.description}</p>
