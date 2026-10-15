@@ -5,20 +5,15 @@ import "../styles/global.css";
 interface Props {
   title: string;
   description?: string;
-  image?: string;
   showSidebars?: boolean;
 }
 
 const {
   title,
   description = "A enciclopédia não oficial da Tribo",
-  image = "/og-image.png",
   showSidebars = true,
 } = Astro.props;
 
-const siteUrl = Astro.site ?? new URL(Astro.url.origin);
-const canonicalURL = new URL(Astro.url.pathname, siteUrl);
-const imageURL = new URL(image, siteUrl);
 const currentPath = Astro.url.pathname;
 ---
 
@@ -31,17 +26,6 @@ const currentPath = Astro.url.pathname;
     <meta name="description" content={description} />
     <!-- Ícone da aba -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <!-- Open Graph (WhatsApp, Discord, Facebook, LinkedIn…) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalURL} />
-    <meta property="og:title" content={`${title} | MulaPédia`} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={imageURL} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="MulaPédia" />
-    <meta property="og:locale" content="pt_BR" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
