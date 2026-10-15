@@ -1,36 +1,54 @@
 ---
-import Search from '../components/Search.astro';
-import '../styles/global.css';
-
+import Search from "../components/Search.astro";
+import "../styles/global.css";
 
 interface Props {
   title: string;
   description?: string;
+  image?: string;
   showSidebars?: boolean;
 }
 
-const { 
-  title, 
-  description = 'A enciclopédia não oficial da Tribo',
-  showSidebars = true 
+const {
+  title,
+  description = "A enciclopédia não oficial da Tribo",
+  image = "/og-image.png",
+  showSidebars = true,
 } = Astro.props;
 
+const siteUrl = Astro.site ?? new URL(Astro.url.origin);
+const canonicalURL = new URL(Astro.url.pathname, siteUrl);
+const imageURL = new URL(image, siteUrl);
 const currentPath = Astro.url.pathname;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | MulaPédia</title>
     <meta name="description" content={description} />
+    <!-- Ícone da aba -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Open Graph (WhatsApp, Discord, Facebook, LinkedIn…) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={`${title} | MulaPédia`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageURL} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="MulaPédia" />
+    <meta property="og:locale" content="pt_BR" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
     <!-- Header -->
     <header class="header">
       <a href="/" class="logo">
@@ -51,46 +69,93 @@ const currentPath = Astro.url.pathname;
 
     <!-- Navigation -->
     <nav class="nav">
-      <a href="/" class={currentPath === '/' ? 'active' : ''}>🏠 Início</a>
-      <a href="/g3x/historia" class={currentPath.includes('/g3x') ? 'active' : ''}>🎮 G3X</a>
-      <a href="/kings-league/overview" class={currentPath.includes('/kings') ? 'active' : ''}>👑 Kings League</a>
-      <a href="/queens-league/overview" class={currentPath.includes('/queens') ? 'active' : ''}>👑 Queens League</a>
-      <a href="/cs2/overview" class={currentPath.includes('/cs2') ? 'active' : ''}>🔫 Counter-Strike 2</a>
-      <a href="/tribo/socio-sofredor" class={currentPath.includes('/socio-sofredor') ? 'active' : ''}>🎫 Sócio Sofredor</a>
-      <a href="/gaules/biografia" class={currentPath.includes('/gaules') ? 'active' : ''}>🎙️ Gaules</a>
-      <a href="/tribo/cultura" class={currentPath.includes('/tribo') ? 'active' : ''}>👥 Comunidade</a>
-      <a href="/glossario" class={currentPath.includes('/glossario') ? 'active' : ''}>📖 Glossário</a>
+      <a href="/" class={currentPath === "/" ? "active" : ""}>🏠 Início</a>
+      <a
+        href="/g3x/historia"
+        class={currentPath.includes("/g3x") ? "active" : ""}>🎮 G3X</a
+      >
+      <a
+        href="/kings-league/overview"
+        class={currentPath.includes("/kings") ? "active" : ""}
+        >👑 Kings League</a
+      >
+      <a
+        href="/queens-league/overview"
+        class={currentPath.includes("/queens") ? "active" : ""}
+        >👑 Queens League</a
+      >
+      <a
+        href="/cs2/overview"
+        class={currentPath.includes("/cs2") ? "active" : ""}
+        >🔫 Counter-Strike 2</a
+      >
+      <a
+        href="/tribo/socio-sofredor"
+        class={currentPath.includes("/socio-sofredor") ? "active" : ""}
+        >🎫 Sócio Sofredor</a
+      >
+      <a
+        href="/gaules/biografia"
+        class={currentPath.includes("/gaules") ? "active" : ""}>🎙️ Gaules</a
+      >
+      <a
+        href="/tribo/cultura"
+        class={currentPath.includes("/tribo") ? "active" : ""}>👥 Comunidade</a
+      >
+      <a
+        href="/glossario"
+        class={currentPath.includes("/glossario") ? "active" : ""}
+        >📖 Glossário</a
+      >
       <a href="/artigos">📄 Artigos</a>
     </nav>
 
     <!-- Main Layout -->
     <div class="container">
-
       <!-- Left Sidebar -->
-      {showSidebars && (
-        <aside class="sidebar-left">
-          <div class="sidebar-title">🧭 Explorar a Tribo</div>
-          <a href="/g3x/historia"><span class="icon">📜</span> Histórico</a>
-          <a href="/tribo/socio-sofredor">🎫 Sócio Sofredor</a>
-          <a href="/g3x/elencos"><span class="icon">📋</span> Elencos</a>
-          <a href="/kings-league/overview"><span class="icon">🏆</span> Torneios</a>
-          <a href="/g3x/resultados"><span class="icon">📊</span> Resultados</a>
-          <a href="/glossario"><span class="icon">😂</span> Memes e bordões</a>
-          <a href="/cs2/overview"><span class="icon">📘</span> Guias de CS2</a>
-          <a href="/tribo/cultura"><span class="icon">❤️</span> Cultura da Tribo</a>
+      {
+        showSidebars && (
+          <aside class="sidebar-left">
+            <div class="sidebar-title">🧭 Explorar a Tribo</div>
+            <a href="/g3x/historia">
+              <span class="icon">📜</span> Histórico
+            </a>
+            <a href="/tribo/socio-sofredor">🎫 Sócio Sofredor</a>
+            <a href="/g3x/elencos">
+              <span class="icon">📋</span> Elencos
+            </a>
+            <a href="/kings-league/overview">
+              <span class="icon">🏆</span> Torneios
+            </a>
+            <a href="/g3x/resultados">
+              <span class="icon">📊</span> Resultados
+            </a>
+            <a href="/glossario">
+              <span class="icon">😂</span> Memes e bordões
+            </a>
+            <a href="/cs2/overview">
+              <span class="icon">📘</span> Guias de CS2
+            </a>
+            <a href="/tribo/cultura">
+              <span class="icon">❤️</span> Cultura da Tribo
+            </a>
 
-          <div style="margin-top:32px;padding:18px;background:#1e293b;border-radius:12px;text-align:center;">
-            <div style="font-size:26px;font-weight:800;color:#60a5fa;letter-spacing:1px;">TRIBO</div>
-            <p style="font-size:12px;color:#94a3b8;margin-top:10px;line-height:1.5;">
-              É mais que um time.<br>
-              <strong style="color:#fbbf24">É uma família.</strong>
-            </p>
-            <p style="font-size:11px;color:#64748b;margin-top:10px;">
-              “A Tribo cuida da Tribo”
-            </p>
-          </div>
-        </aside>
-      )}
+            <div style="margin-top:32px;padding:18px;background:#1e293b;border-radius:12px;text-align:center;">
+              <div style="font-size:26px;font-weight:800;color:#60a5fa;letter-spacing:1px;">
+                TRIBO
+              </div>
+              <p style="font-size:12px;color:#94a3b8;margin-top:10px;line-height:1.5;">
+                É mais que um time.
+                <br />
+                <strong style="color:#fbbf24">É uma família.</strong>
+              </p>
+              <p style="font-size:11px;color:#64748b;margin-top:10px;">
+                “A Tribo cuida da Tribo”
+              </p>
+            </div>
+          </aside>
+        )
+      }
 
       <!-- Main Content -->
       <main class="main">
@@ -98,107 +163,131 @@ const currentPath = Astro.url.pathname;
       </main>
 
       <!-- Right Sidebar -->
-      {showSidebars && (
-        <aside class="sidebar-right">
-          <div class="widget">
-            <div class="widget-title">🔥 Em destaque</div>
-            <div style="font-size:13px;font-weight:600;margin-bottom:10px;color:#94a3b8;">Próximos jogos / Eventos</div>
+      {
+        showSidebars && (
+          <aside class="sidebar-right">
+            <div class="widget">
+              <div class="widget-title">🔥 Em destaque</div>
+              <div style="font-size:13px;font-weight:600;margin-bottom:10px;color:#94a3b8;">
+                Próximos jogos / Eventos
+              </div>
 
-            <a href="/kings-league/overview" class="match-item">
-              <div class="match-icon">⚽</div>
-              <div class="match-teams">
-                <strong>Kings Cup Brazil</strong><br>Início da competição
-              </div>
-              <div class="match-time">19 out<br>2026</div>
-            </a>
-            <a href="/g3x/elenco" class="match-item">
-              <div class="match-icon">👥</div>
-              <div class="match-teams">
-                <strong>Elenco G3X</strong><br>Kings Cup 2026
-              </div>
-              <div class="match-time">Atual</div>
-            </a>
-            <a href="/cs2/overview" class="match-item">
-              <div class="match-icon">🔫</div>
-              <div class="match-teams">
-                <strong>CS2</strong><br>Transmissões diárias
-              </div>
-              <div class="match-time">Todos<br>os dias</div>
-            </a>
-          </div>
+              <a href="/kings-league/overview" class="match-item">
+                <div class="match-icon">⚽</div>
+                <div class="match-teams">
+                  <>
+                    <strong>Kings Cup Brazil</strong>
+                    <br />
+                  </>
+                  Início da competição
+                </div>
+                <div class="match-time">
+                  19 out
+                  <br />
+                  2026
+                </div>
+              </a>
+              <a href="/g3x/elenco" class="match-item">
+                <div class="match-icon">👥</div>
+                <div class="match-teams">
+                  <>
+                    <strong>Elenco G3X</strong>
+                    <br />
+                  </>
+                  Kings Cup 2026
+                </div>
+                <div class="match-time">Atual</div>
+              </a>
+              <a href="/cs2/overview" class="match-item">
+                <div class="match-icon">🔫</div>
+                <div class="match-teams">
+                  <>
+                    <strong>CS2</strong>
+                    <br />
+                  </>
+                  Transmissões diárias
+                </div>
+                <div class="match-time">
+                  Todos
+                  <br />
+                  os dias
+                </div>
+              </a>
+            </div>
 
-          <div class="widget">
-            <div class="widget-title">⭐ Artigos populares</div>
-            <a href="/g3x/historia" class="pop-item">
-              <div class="pop-number">1</div>
-              <div>
-                <div>História completa do G3X</div>
-                <div class="pop-views">Do 1.6 ao título mundial</div>
-              </div>
-            </a>
-            <a href="/g3x/elenco" class="pop-item">
-              <div class="pop-number">2</div>
-              <div>
-                <div>Elenco G3X Kings Cup 2026</div>
-                <div class="pop-views">Após o Draft</div>
-              </div>
-            </a>
-            <a href="/kings-league/overview" class="pop-item">
-              <div class="pop-number">3</div>
-              <div>
-                <div>G3X Campeão Mundial 2026</div>
-                <div class="pop-views">9×5 Alpak em Milão</div>
-              </div>
-            </a>
-            <a href="/glossario" class="pop-item">
-              <div class="pop-number">4</div>
-              <div>
-                <div>Dicionário da Tribo</div>
-                <div class="pop-views">Bordões e gírias</div>
-              </div>
-            </a>
-            <a href="/gaules/biografia" class="pop-item">
-              <div class="pop-number">5</div>
-              <div>
-                <div>Quem é Gaules</div>
-                <div class="pop-views">Biografia completa</div>
-              </div>
-            </a>
-          </div>
+            <div class="widget">
+              <div class="widget-title">⭐ Artigos populares</div>
+              <a href="/g3x/historia" class="pop-item">
+                <div class="pop-number">1</div>
+                <div>
+                  <div>História completa do G3X</div>
+                  <div class="pop-views">Do 1.6 ao título mundial</div>
+                </div>
+              </a>
+              <a href="/g3x/elenco" class="pop-item">
+                <div class="pop-number">2</div>
+                <div>
+                  <div>Elenco G3X Kings Cup 2026</div>
+                  <div class="pop-views">Após o Draft</div>
+                </div>
+              </a>
+              <a href="/kings-league/overview" class="pop-item">
+                <div class="pop-number">3</div>
+                <div>
+                  <div>G3X Campeão Mundial 2026</div>
+                  <div class="pop-views">9×5 Alpak em Milão</div>
+                </div>
+              </a>
+              <a href="/glossario" class="pop-item">
+                <div class="pop-number">4</div>
+                <div>
+                  <div>Dicionário da Tribo</div>
+                  <div class="pop-views">Bordões e gírias</div>
+                </div>
+              </a>
+              <a href="/gaules/biografia" class="pop-item">
+                <div class="pop-number">5</div>
+                <div>
+                  <div>Quem é Gaules</div>
+                  <div class="pop-views">Biografia completa</div>
+                </div>
+              </a>
+            </div>
 
-          <div class="widget">
-            <div class="widget-title">🔄 Últimas atualizações</div>
-            <a href="/g3x/elenco" class="update-item">
-              <div class="match-icon">⚽</div>
-              <div style="flex:1">
-                <strong>G3X</strong> — Draft Kings Cup finalizado
-                <div style="font-size:11px;color:#64748b;">out 2026</div>
-              </div>
-            </a>
-            <a href="/kings-league/overview" class="update-item">
-              <div class="match-icon">🏆</div>
-              <div style="flex:1">
-                <strong>G3X FC</strong> — Campeão Mundial
-                <div style="font-size:11px;color:#64748b;">1 ago 2026</div>
-              </div>
-            </a>
-            <a href="/cs2/overview" class="update-item">
-              <div class="match-icon">🎙️</div>
-              <div style="flex:1">
-                <strong>Gaules</strong> — Dream Team CS2
-                <div style="font-size:11px;color:#64748b;">abr 2026</div>
-              </div>
-            </a>
-            <a href="/glossario" class="update-item">
-              <div class="match-icon">📖</div>
-              <div style="flex:1">
-                <strong>Glossário</strong> — Novos bordões
-                <div style="font-size:11px;color:#64748b;">mar 2026</div>
-              </div>
-            </a>
-          </div>
-        </aside>
-      )}
+            <div class="widget">
+              <div class="widget-title">🔄 Últimas atualizações</div>
+              <a href="/g3x/elenco" class="update-item">
+                <div class="match-icon">⚽</div>
+                <div style="flex:1">
+                  <strong>G3X</strong> — Draft Kings Cup finalizado
+                  <div style="font-size:11px;color:#64748b;">out 2026</div>
+                </div>
+              </a>
+              <a href="/kings-league/overview" class="update-item">
+                <div class="match-icon">🏆</div>
+                <div style="flex:1">
+                  <strong>G3X FC</strong> — Campeão Mundial
+                  <div style="font-size:11px;color:#64748b;">1 ago 2026</div>
+                </div>
+              </a>
+              <a href="/cs2/overview" class="update-item">
+                <div class="match-icon">🎙️</div>
+                <div style="flex:1">
+                  <strong>Gaules</strong> — Dream Team CS2
+                  <div style="font-size:11px;color:#64748b;">abr 2026</div>
+                </div>
+              </a>
+              <a href="/glossario" class="update-item">
+                <div class="match-icon">📖</div>
+                <div style="flex:1">
+                  <strong>Glossário</strong> — Novos bordões
+                  <div style="font-size:11px;color:#64748b;">mar 2026</div>
+                </div>
+              </a>
+            </div>
+          </aside>
+        )
+      }
     </div>
 
     <footer class="footer">
@@ -206,11 +295,10 @@ const currentPath = Astro.url.pathname;
         <strong>MulaPédia</strong> — Conhecimento de toda a Tribo
       </div>
       <div style="font-size:12px;opacity:0.75;">
-        👑 Feita pela comunidade, para a comunidade.<br>
-        Conteúdo baseado em fatos reais até outubro de 2026.<br>
+        👑 Feita pela comunidade, para a comunidade.<br />
+        Conteúdo baseado em fatos reais até outubro de 2026.<br />
         Projeto conceitual — não oficial.
       </div>
     </footer>
-
   </body>
 </html>

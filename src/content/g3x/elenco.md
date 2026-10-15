@@ -24,7 +24,7 @@ updatedDate: 2026-10-14
     </div>
 </a>
 
-  <div class="player-card">
+ <a href="/g3x/jogadores/kelvin-oliveira" class="player-card" style="text-decoration:none;color:inherit;">
     <img src="/players/k9.jpg" alt="Gelado" />
     <div class="info">
       <div class="name">Kelvin Oliveira</div>
@@ -32,16 +32,16 @@ updatedDate: 2026-10-14
       <span class="badge red">Lesionado</span>
           <span class="badge gold">WC</span>
     </div>
-  </div>
+</a>
 
-  <div class="player-card">
+<a href="/g3x/comissao/velho-vamp" class="player-card" style="text-decoration:none;color:inherit;">
    <img src="/players/vvv.jpg" alt="vvv" />
     <div class="info">
       <div class="name">Velho Vamp</div>
       <div class="position">Técnico</div>
        <span class="badge gold">Many Man</span>
     </div>
-  </div>
+</a>
 
 <a href="/g3x/comissao/apoka" class="player-card" style="text-decoration:none;color:inherit;">
  <img src="/players/apoka.jpg" alt="apoka" />
@@ -57,15 +57,15 @@ updatedDate: 2026-10-14
 
 <div class="players-grid">
 
-  <div class="player-card">
+ <a href="/g3x/jogadores/gabriel-braga" class="player-card" style="text-decoration:none;color:inherit;">
    <img src="/players/braga.jpg" alt="braga" />
     <div class="info">
       <div class="name">Gabriel Braga</div>
       <div class="position">Goleiro</div>
     </div>
-  </div>
+ </a>
 
-  <div class="player-card">
+  <a href="/g3x/jogadores/josildo-barata" class="player-card" style="text-decoration:none;color:inherit;">
     <img src="/players/barata.jpg" alt="barata" />
     <div class="info">
       <div class="name">Josildo Barata</div>
@@ -73,7 +73,7 @@ updatedDate: 2026-10-14
       <span class="badge gold">Mundial 2026</span>
           <span class="badge gold">WC</span>
     </div>
-  </div>
+  </a>
 
 </div>
 
@@ -81,7 +81,7 @@ updatedDate: 2026-10-14
 
 <div class="players-grid">
 
-  <div class="player-card">
+  <a href="/g3x/jogadores/wembley-luiz" class="player-card" style="text-decoration:none;color:inherit;">
    <img src="/players/luiz.jpg" alt="luiz" />
     <div class="info">
       <div class="name">Wembley Luiz</div>
@@ -89,23 +89,23 @@ updatedDate: 2026-10-14
       <span class="badge gold">Mundial 2026</span>
           <span class="badge gold">WC</span>
     </div>
-  </div>
+  </a>
 
-  <div class="player-card">
+  <a href="/g3x/jogadores/gabriel-messias" class="player-card" style="text-decoration:none;color:inherit;">
     <img src="/players/messias.jpg" alt="messias" />
     <div class="info">
       <div class="name">Gabriel Messias</div>
       <div class="position">Defensor</div>
     </div>
-  </div>
+  </a>
 
-  <div class="player-card">
+  <a href="/g3x/jogadores/marcelo-vilella" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">🛡️</div>
     <div class="info">
       <div class="name">Marcelo Vilella</div>
       <div class="position">Defensor</div>
     </div>
-  </div>
+  </a>
 
 </div>
 
@@ -123,29 +123,29 @@ updatedDate: 2026-10-14
     </div>
 </a>
 
-  <div class="player-card">
+  <a href="/g3x/jogadores/marquinhos-samora" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">⚙️</div>
     <div class="info">
       <div class="name">Marquinhos Samora</div>
       <div class="position">Meia</div>
     </div>
-  </div>
+  </a>
 
-  <div class="player-card">
+  <a href="/g3x/jogadores/thiago-th" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">⚙️</div>
     <div class="info">
       <div class="name">Thiago TH</div>
       <div class="position">Meia</div>
     </div>
-  </div>
+</a>
 
-  <div class="player-card">
+  <a href="/g3x/jogadores/dudu-barbosa" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">⚙️</div>
     <div class="info">
       <div class="name">Dudu Barbosa</div>
       <div class="position">Meia</div>
     </div>
-  </div>
+  </a>
 
 </div>
 

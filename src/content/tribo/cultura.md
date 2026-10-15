@@ -44,7 +44,7 @@ Clique para conhecer cada um:
     </div>
   </a>
 
-  <a href="/tribo/liminha" class="player-card" style="text-decoration:none;color:inherit;">
+  <a href="/tribo/streamer/liminha" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">🐸</div>
     <div class="info">
       <div class="name">Liminha</div>
@@ -53,7 +53,7 @@ Clique para conhecer cada um:
     </div>
   </a>
 
-  <a href="/tribo/bt" class="player-card" style="text-decoration:none;color:inherit;">
+  <a href="/tribo/streamer/bt" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">📢</div>
     <div class="info">
       <div class="name">BT</div>
@@ -62,7 +62,7 @@ Clique para conhecer cada um:
     </div>
   </a>
 
-  <a href="/tribo/apoka" class="player-card" style="text-decoration:none;color:inherit;">
+  <a href="/g3x/comissao/apoka" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">🎮</div>
     <div class="info">
       <div class="name">Apoka</div>
@@ -71,7 +71,7 @@ Clique para conhecer cada um:
     </div>
   </a>
 
-  <a href="/tribo/mch" class="player-card" style="text-decoration:none;color:inherit;">
+  <a href="/tribo/streamer/mch" class="player-card" style="text-decoration:none;color:inherit;">
     <div class="placeholder">🚬</div>
     <div class="info">
       <div class="name">mch</div>

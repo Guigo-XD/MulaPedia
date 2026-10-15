@@ -1,5 +1,10 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { defineConfig } from 'astro/config';
+
+export default defineConfig({
+  site: 'https://mulapedia.vercel.app', // troque pelo domínio real
+});
 
 const pages = defineCollection({
   loader: glob({

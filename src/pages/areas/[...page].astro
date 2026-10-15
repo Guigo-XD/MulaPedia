@@ -1,0 +1,171 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths({ paginate }) {
+  const allAreas = [
+    {
+      title: 'G3X',
+      emoji: '🎮',
+      description: 'História, elencos, títulos e resultados do time do povo.',
+      href: '/g3x/historia',
+      links: [
+        { label: 'História', href: '/g3x/historia' },
+        { label: 'Elencos', href: '/g3x/elencos' },
+        { label: 'Elenco Kings', href: '/g3x/elenco' },
+        { label: 'Resultados', href: '/g3x/resultados' },
+        { label: 'Títulos', href: '/g3x/titulos' },
+      ],
+      gradient: 'linear-gradient(135deg,#7f1d1d,#1e1b4b)',
+    },
+    {
+      title: 'Kings League',
+      emoji: '👑',
+      description: 'Futebol 7, regras, campanhas e o título mundial de 2026.',
+      href: '/kings-league/overview',
+      links: [
+        { label: 'Visão geral', href: '/kings-league/overview' },
+        { label: 'Elenco G3X', href: '/g3x/elenco' },
+        { label: 'Resultados', href: '/g3x/resultados' },
+      ],
+      gradient: 'linear-gradient(135deg,#14532d,#1e3a8a)',
+    },
+    {
+      title: 'Counter-Strike 2',
+      emoji: '🔫',
+      description: 'CS2, mapas, Dream Team e as lives que movem a Tribo.',
+      href: '/cs2/overview',
+      links: [
+        { label: 'Visão geral', href: '/cs2/overview' },
+        { label: 'Mapas', href: '/cs2/mapas' },
+        { label: 'Elenco CS2', href: '/g3x/elenco-cs2' },
+      ],
+      gradient: 'linear-gradient(135deg,#1e3a8a,#0f172a)',
+    },
+    {
+      title: 'Queens League',
+      emoji: '👑',
+      description: 'Projeto G3X na Queens League — elenco e estrutura.',
+      href: '/g3x/elenco-queens',
+      links: [
+        { label: 'Elenco Queens', href: '/g3x/elenco-queens' },
+        { label: 'Todos os elencos', href: '/g3x/elencos' },
+      ],
+      gradient: 'linear-gradient(135deg,#4c1d95,#831843)',
+    },
+    {
+      title: 'Gaules',
+      emoji: '🎙️',
+      description: 'Biografia do líder da Tribo — do CS 1.6 ao título mundial.',
+      href: '/gaules/biografia',
+      links: [
+        { label: 'Biografia', href: '/gaules/biografia' },
+        { label: 'Cultura da Tribo', href: '/tribo/cultura' },
+      ],
+      gradient: 'linear-gradient(135deg,#1e3a8a,#312e81)',
+    },
+    {
+      title: 'Universo da Tribo',
+      emoji: '❤️',
+      description: 'Cultura, streamers, bordões, Sócio Sofredor e comunidade.',
+      href: '/tribo/cultura',
+      links: [
+        { label: 'Cultura', href: '/tribo/cultura' },
+        { label: 'Glossário', href: '/glossario' },
+        { label: 'Sócio Sofredor', href: '/tribo/socio-sofredor' },
+        { label: 'Artigos', href: '/artigos' },
+      ],
+      gradient: 'linear-gradient(135deg,#312e81,#1e1b4b)',
+    },
+  ];
+
+  return paginate(allAreas, { pageSize: 4 });
+}
+
+const { page } = Astro.props;
+---
+
+<Layout
+  title={page.currentPage === 1 ? 'Todas as áreas' : `Áreas — página ${page.currentPage}`}
+  description="Principais seções da MulaPédia"
+>
+  <button type="button" class="back-btn" id="btn-voltar">← Voltar</button>
+
+  <article class="content-page" data-pagefind-body>
+    <h1>⭐ Todas as áreas</h1>
+    <p class="subtitle">
+      Página {page.currentPage} de {page.lastPage}
+      · {page.total} área{page.total === 1 ? '' : 's'}
+    </p>
+
+    <div
+      class="cards-grid"
+      style="margin-top: 24px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));"
+    >
+      {page.data.map((area) => (
+        <div class="card">
+          <a
+            href={area.href}
+            class="card-img-link"
+            style={`background:${area.gradient}; height:100px; display:flex; align-items:center; justify-content:center; font-size:40px; text-decoration:none;`}
+          >
+            <span>{area.emoji}</span>
+          </a>
+          <div class="card-body">
+            <a href={area.href}><h4>{area.title}</h4></a>
+            <p>{area.description}</p>
+            <div class="card-links">
+              {area.links.map((link) => (
+                <a href={link.href}>{link.label} →</a>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {page.lastPage > 1 && (
+      <nav class="pagination" aria-label="Paginação de áreas">
+        {page.url.prev ? (
+          <a href={page.url.prev} class="page-btn">← Anterior</a>
+        ) : (
+          <span class="page-btn disabled">← Anterior</span>
+        )}
+
+        <div class="page-numbers">
+          {Array.from({ length: page.lastPage }, (_, i) => i + 1).map((n) => (
+            <a
+              href={n === 1 ? '/areas' : `/areas/${n}`}
+              class:list={['page-num', n === page.currentPage && 'active']}
+            >
+              {n}
+            </a>
+          ))}
+        </div>
+
+        {page.url.next ? (
+          <a href={page.url.next} class="page-btn">Próxima →</a>
+        ) : (
+          <span class="page-btn disabled">Próxima →</span>
+        )}
+      </nav>
+    )}
+  </article>
+</Layout>
+
+<script>
+  const btn = document.getElementById('btn-voltar');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      if (window.history.length > 1 && document.referrer) {
+        try {
+          const ref = new URL(document.referrer);
+          if (ref.origin === window.location.origin) {
+            window.history.back();
+            return;
+          }
+        } catch {}
+      }
+      window.location.href = '/';
+    });
+  }
+</script>

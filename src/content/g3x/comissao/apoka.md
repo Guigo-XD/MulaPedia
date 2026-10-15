@@ -17,36 +17,21 @@ updatedDate: 2026-10-14
     </div>
   </div>
 
-  <!-- BIO + DESTAQUES (direita) -->
-  <div class="player-profile-body">
+ <div class="player-profile-body">
     <h2>Biografia</h2>
     <p>
-      -
-    </p>
-    <p>
-      -
+      Ale Apoka é auxiliar técnico do G3X FC e um dos nomes fixos do universo da Tribo,
+      presente nas lives e na estrutura do clube na Kings League.
     </p>
     <div class="stats-row">
-      <div class="stat-box">
-        <div class="value">Aux Tec</div>
-        <div class="label">Posição</div>
-      </div>
-      <div class="stat-box">
-        <div class="value">2026</div>
-        <div class="label">Mundial</div>
-      </div>
-      <div class="stat-box">
-        <div class="value">G3X</div>
-        <div class="label">Clube</div>
-      </div>
+      <div class="stat-box"><div class="value">Auxiliar</div><div class="label">Função</div></div>
+      <div class="stat-box"><div class="value">G3X</div><div class="label">Clube</div></div>
+      <div class="stat-box"><div class="value">Tribo</div><div class="label">Comunidade</div></div>
     </div>
     <h2>Destaques</h2>
     <ul class="highlights">
-      <li>*</li>
+      <li>Auxiliar técnico do G3X FC</li>
+      <li>Figura da cabine e da Tribo</li>
     </ul>
-    <h2>Curiosidades</h2>
-    <p>
-      -
-
   </div>
 </div>
