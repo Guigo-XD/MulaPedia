@@ -7,18 +7,29 @@ import Layout from '../layouts/Layout.astro';
 
  <!-- Hero -->
 <section class="hero">
-  <div class="hero-mascot">🫏</div>
+  <img
+    class="hero-bg"
+    src="/hero/tribo-hero.jpg"
+    alt=""
+  />
+  <div class="hero-overlay" aria-hidden="true"></div>
 
-  <div class="hero-content">
-    <h2>Mula<span>Pédia</span></h2>
-    <p>A enciclopédia não oficial da Tribo — G3X, Kings League, CS2, Gaules e a maior comunidade do Brasil.</p>
-  </div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h2>Mula<span>Pédia</span></h2>
+      <p>
+        A enciclopédia não oficial da Tribo — G3X, Kings League, CS2, Gaules
+        e a maior comunidade do Brasil.
+      </p>
+      <div class="hero-badge">👑 A Tribo cuida da Tribo</div>
+    </div>
 
-  <div class="hero-tags">
-    <span>INFORMAÇÃO</span>
-    <span>JOGO</span>
-    <span>COMUNIDADE</span>
-    <span>TRIBO 👑</span>
+    <div class="hero-tags">
+      <span>INFORMAÇÃO</span>
+      <span>JOGO</span>
+      <span>COMUNIDADE</span>
+      <span>TRIBO 👑</span>
+    </div>
   </div>
 </section>
 
