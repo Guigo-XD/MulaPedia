@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Página não encontrada"
+  description="Essa página não existe na MulaPédia"
+  showSidebars={false}
+>
+  <article class="content-page page-404">
+    <div style="font-size:64px;margin-bottom:12px;">🫏</div>
+    <h1 style="font-size:2rem;margin-bottom:8px;">404 — Não encontrado</h1>
+    <p style="color:var(--text-muted);max-width:420px;margin:0 auto 24px;">
+      Essa página não existe na MulaPédia… ou foi pro respawn.
+      A Tribo cuida da Tribo — vamos te levar de volta.
+    </p>
+
+    <div class="actions">
+      <a href="/" class="page-btn" style="color:#fff;background:var(--accent);border-color:var(--accent);">
+        🏠 Início
+      </a>
+      <a href="/artigos" class="page-btn">📄 Artigos</a>
+      <a href="/areas" class="page-btn">⭐ Áreas</a>
+      <a href="/g3x/elencos" class="page-btn">👥 Elencos</a>
+    </div>
+  </article>
+</Layout>

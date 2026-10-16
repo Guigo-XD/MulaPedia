@@ -95,8 +95,7 @@ const currentPath = Astro.url.pathname;
     </nav>
 
     <!-- Main Layout -->
-    <div class="container">
-      <!-- Left Sidebar -->
+    <div class:list={["container", !showSidebars && "container--single"]}>
       {
         showSidebars && (
           <aside class="sidebar-left">

@@ -1,5 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const latestArticles = (await getCollection('pages'))
+  .sort((a, b) => {
+    const da = a.data.updatedDate ? new Date(a.data.updatedDate).getTime() : 0;
+    const db = b.data.updatedDate ? new Date(b.data.updatedDate).getTime() : 0;
+    return db - da;
+  })
+  .slice(0, 4);
+
+function sectionEmoji(section?: string) {
+  if (section === 'G3X') return '🎮';
+  if (section === 'Kings League') return '👑';
+  if (section === 'CS2') return '🔫';
+  if (section === 'Gaules') return '🎙️';
+  if (section === 'Tribo') return '❤️';
+  return '📄';
+}
 ---
 
 <Layout title="Início">
@@ -108,45 +126,32 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Últimos artigos -->
   <section>
-    <div class="section-header">
-      <h3>📄 Últimos artigos</h3>
-      <a href="/artigos">Ver todos os artigos →</a>
-    </div>
+  <div class="section-header">
+    <h3>📄 Últimos artigos</h3>
+    <a href="/artigos">Ver todos os artigos →</a>
+  </div>
 
-    <div class="articles-grid">
-      <a href="/g3x/historia" class="article-card">
-        <div class="article-img" style="background:linear-gradient(135deg,#7f1d1d,#1e1b4b);">📜</div>
+  <div class="articles-grid">
+    {latestArticles.map((article) => (
+      <a href={`/${article.id}`} class="article-card">
+        <div
+          class="article-img"
+          style="background:linear-gradient(135deg,#1e293b,#0f172a);"
+        >
+          {sectionEmoji(article.data.section)}
+        </div>
         <div class="article-body">
-          <h5>História do G3X</h5>
-          <p>Do CS 1.6 em 2001 ao título mundial de fut7 em 2026</p>
-          <div class="article-date">Atualizado out 2026</div>
+          <h5>{article.data.title}</h5>
+          <p>{article.data.description || 'Artigo da MulaPédia'}</p>
+          <div class="article-date">
+            {article.data.section || 'Geral'}
+            {article.data.updatedDate &&
+              ` · ${new Date(article.data.updatedDate).toLocaleDateString('pt-BR')}`}
+          </div>
         </div>
       </a>
-      <a href="/kings-league/overview" class="article-card">
-        <div class="article-img" style="background:linear-gradient(135deg,#14532d,#1e3a8a);">🏆</div>
-        <div class="article-body">
-          <h5>G3X Campeão Mundial 2026</h5>
-          <p>9×5 no Alpak em Milão — Kelvin artilheiro com 14 gols</p>
-          <div class="article-date">1 de ago de 2026</div>
-        </div>
-      </a>
-      <a href="/g3x/elenco" class="article-card">
-        <div class="article-img" style="background:linear-gradient(135deg,#1e3a8a,#0f172a);">👥</div>
-        <div class="article-body">
-          <h5>Elenco G3X Kings Cup 2026</h5>
-          <p>Após o Draft — veja todos os jogadores</p>
-          <div class="article-date">out 2026</div>
-        </div>
-      </a>
-      <a href="/glossario" class="article-card">
-        <div class="article-img" style="background:linear-gradient(135deg,#312e81,#1e1b4b);">📖</div>
-        <div class="article-body">
-          <h5>Dicionário de Bordões</h5>
-          <p>Lei de Gaules, Sapo Cego, Pede Liminha e muito mais</p>
-          <div class="article-date">mar 2026</div>
-        </div>
-      </a>
-    </div>
-  </section>
+    ))}
+  </div>
+</section>
 </div>
 </Layout>

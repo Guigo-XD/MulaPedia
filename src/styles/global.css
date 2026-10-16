@@ -210,6 +210,36 @@ a {
   min-width: 0;
 }
 
+/* Página sem sidebars (404, etc.) */
+.container--single {
+  display: block !important;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px 24px;
+}
+
+.container--single .main {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Centraliza o card da 404 no desktop */
+.page-404 {
+  text-align: center;
+  padding: 56px 32px !important;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-404 .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
 /* ========== HERO ========== */
 .hero {
   position: relative;
