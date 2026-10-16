@@ -51,6 +51,22 @@ updatedDate: 2026-10-14
     </div>
 </a>
 
+<a href="/g3x/comissao/larissa" class="player-card" style="text-decoration:none;color:inherit;">
+ <img src="/players/lari.jpg" alt="apoka" />
+    <div class="info">
+      <div class="name">Larissa Lisboa</div>
+      <div class="position">Fisioterapeuta</div>
+    </div>
+</a>
+
+<a href="/g3x/comissao/tato" class="player-card" style="text-decoration:none;color:inherit;">
+ <img src="/players/tato.jpg" alt="apoka" />
+    <div class="info">
+      <div class="name">Tato Rorato</div>
+      <div class="position">Prep. de Goleiros</div>
+    </div>
+</a>
+
 </div>
 
 ## Goleiros
