@@ -1006,6 +1006,11 @@ a {
   border-color: #ff0000;
   color: #fca5a5;
 }
+
+.profile-socials a.instagram:hover {
+  border-color: #ff00aab7;
+  color: #fca5a5;
+}
 /* ========== PAGINAÇÃO ========== */
 .pagination {
   display: flex;

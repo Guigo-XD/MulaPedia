@@ -7,10 +7,15 @@ updatedDate: 2026-10-15
 
 <div class="player-profile">
   <div class="player-profile-photo">
-    <div class="placeholder">⚡</div>
+   <img src="/players/niniu.jpg" alt="niniu" /> 
     <div class="meta">
       <div class="name">Marcos Niniu</div>
       <div class="position">Atacante · G3X FC</div>
+    </div>
+      <div class="profile-socials">
+      <a class="instagram" href="https://www.instagram.com/niniu_10" target="_blank" rel="noopener noreferrer">
+        📷 Instagram
+      </a>
     </div>
   </div>
   <div class="player-profile-body">

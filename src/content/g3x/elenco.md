@@ -62,6 +62,7 @@ updatedDate: 2026-10-14
     <div class="info">
       <div class="name">Gabriel Braga</div>
       <div class="position">Goleiro</div>
+      <span class="badge gold">Mundial 2026</span>
     </div>
  </a>
 
@@ -100,7 +101,7 @@ updatedDate: 2026-10-14
   </a>
 
   <a href="/g3x/jogadores/marcelo-vilella" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">🛡️</div>
+   <img src="/players/marcelo.jpg" alt="Marcelo" />
     <div class="info">
       <div class="name">Marcelo Vilella</div>
       <div class="position">Defensor</div>
@@ -124,7 +125,7 @@ updatedDate: 2026-10-14
 </a>
 
   <a href="/g3x/jogadores/marquinhos-samora" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">⚙️</div>
+     <img src="/players/marquinhos.jpg" alt="marquinhos" />
     <div class="info">
       <div class="name">Marquinhos Samora</div>
       <div class="position">Meia</div>
@@ -132,7 +133,7 @@ updatedDate: 2026-10-14
   </a>
 
   <a href="/g3x/jogadores/thiago-th" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">⚙️</div>
+     <img src="/players/th.jpg" alt="TH" />
     <div class="info">
       <div class="name">Thiago TH</div>
       <div class="position">Meia</div>
@@ -140,7 +141,7 @@ updatedDate: 2026-10-14
 </a>
 
   <a href="/g3x/jogadores/dudu-barbosa" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">⚙️</div>
+     <img src="/players/dudu.jpg" alt="dudu" />
     <div class="info">
       <div class="name">Dudu Barbosa</div>
       <div class="position">Meia</div>
@@ -154,7 +155,7 @@ updatedDate: 2026-10-14
 <div class="players-grid">
 
  <a href="/g3x/jogadores/aleix-marti" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">🔥</div>
+     <img src="/players/kalvin.jpg" alt="kalvin" />
     <div class="info">
       <div class="name">Aleix Martí</div>
       <div class="position">Atacante</div>
@@ -164,7 +165,7 @@ updatedDate: 2026-10-14
   </a>
 
  <a href="/g3x/jogadores/danilo-silva" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">⚡</div>
+    <img src="/players/danilo.jpg" alt="danilo" />
     <div class="info">
       <div class="name">Danilo Silva</div>
       <div class="position">Atacante</div>
@@ -173,7 +174,7 @@ updatedDate: 2026-10-14
     </a>
 
   <a href="/g3x/jogadores/marcos-niniu" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">⚡</div>
+    <img src="/players/niniu.jpg" alt="Niniu" />
     <div class="info">
       <div class="name">Marcos Niniu</div>
       <div class="position">Atacante</div>

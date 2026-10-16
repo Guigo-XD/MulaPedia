@@ -7,11 +7,16 @@ updatedDate: 2026-10-15
 
 <div class="player-profile">
   <div class="player-profile-photo">
-    <div class="placeholder">🔥</div>
+     <img src="/players/kalvin.jpg" alt="kalvin" /> 
     <div class="meta">
       <div class="name">Aleix Martí</div>
       <div class="position">Atacante · G3X FC</div>
       <span class="badge gold">36 gols Spain</span>
+    </div>
+     <div class="profile-socials">
+      <a class="instagram" href="https://www.instagram.com/aleiixmp" target="_blank" rel="noopener noreferrer">
+        📷 Instagram
+      </a>
     </div>
   </div>
   <div class="player-profile-body">

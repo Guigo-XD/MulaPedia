@@ -7,10 +7,15 @@ updatedDate: 2026-10-15
 
 <div class="player-profile">
   <div class="player-profile-photo">
-    <div class="placeholder">⚙️</div>
+    <img src="/players/marquinhos.jpg" alt="marquinhos" /> 
     <div class="meta">
       <div class="name">Marquinhos Samora</div>
       <div class="position">Meia · G3X FC</div>
+    </div>
+      <div class="profile-socials">
+      <a class="instagram" href="https://www.instagram.com/maarquinhos.12/?hl=pt-br" target="_blank" rel="noopener noreferrer">
+        📷 Instagram
+      </a>
     </div>
   </div>
   <div class="player-profile-body">

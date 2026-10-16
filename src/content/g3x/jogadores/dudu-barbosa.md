@@ -7,10 +7,15 @@ updatedDate: 2026-10-15
 
 <div class="player-profile">
   <div class="player-profile-photo">
-    <div class="placeholder">⚙️</div>
+    <img src="/players/dudu.jpg" alt="Dudu" /> 
     <div class="meta">
       <div class="name">Dudu Barbosa</div>
       <div class="position">Meia · G3X FC</div>
+    </div>
+      <div class="profile-socials">
+      <a class="instagram" href="https://www.instagram.com/_dudu99_" target="_blank" rel="noopener noreferrer">
+        📷 Instagram
+      </a>
     </div>
   </div>
   <div class="player-profile-body">

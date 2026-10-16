@@ -7,10 +7,16 @@ updatedDate: 2026-10-15
 
 <div class="player-profile">
   <div class="player-profile-photo">
-    <div class="placeholder">🧤</div>
+     <img src="/players/braga.jpg" alt="Braga" /> 
     <div class="meta">
       <div class="name">Gabriel Braga</div>
       <div class="position">Goleiro · G3X FC</div>
+      <span class="badge gold">Mundial 2026</span>
+    </div>
+      <div class="profile-socials">
+      <a class="instagram" href="https://www.instagram.com/braga_gk12" target="_blank" rel="noopener noreferrer">
+        📷 Instagram
+      </a>
     </div>
   </div>
   <div class="player-profile-body">

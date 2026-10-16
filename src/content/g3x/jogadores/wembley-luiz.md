@@ -7,11 +7,16 @@ updatedDate: 2026-10-15
 
 <div class="player-profile">
   <div class="player-profile-photo">
-    <div class="placeholder">🛡️</div>
+    <img src="/players/luiz.jpg" alt="luiz" /> 
     <div class="meta">
       <div class="name">Wembley Luiz</div>
       <div class="position">Defensor · G3X FC</div>
       <span class="badge gold">Mundial 2026</span>
+    </div>
+      <div class="profile-socials">
+      <a class="instagram" href="https://www.instagram.com/luizwembley" target="_blank" rel="noopener noreferrer">
+        📷 Instagram
+      </a>
     </div>
   </div>
   <div class="player-profile-body">

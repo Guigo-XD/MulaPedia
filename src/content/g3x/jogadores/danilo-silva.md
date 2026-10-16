@@ -7,11 +7,16 @@ updatedDate: 2026-10-15
 
 <div class="player-profile">
   <div class="player-profile-photo">
-    <div class="placeholder">⚡</div>
+     <img src="/players/danilo.jpg" alt="Danilo" /> 
     <div class="meta">
       <div class="name">Danilo Silva</div>
       <div class="position">Atacante · G3X FC</div>
       <span class="badge">Pick 1 Draft</span>
+    </div>
+     <div class="profile-socials">
+      <a class="instagram" href="https://www.instagram.com/danilo_pereira01" target="_blank" rel="noopener noreferrer">
+        📷 Instagram
+      </a>
     </div>
   </div>
   <div class="player-profile-body">

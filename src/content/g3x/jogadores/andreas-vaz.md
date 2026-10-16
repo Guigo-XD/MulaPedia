@@ -9,12 +9,16 @@ updatedDate: 2026-10-14
 
   <!-- FOTO (esquerda) -->
   <div class="player-profile-photo">
-    <!-- Com foto: -->
     <img src="/players/andreas-vaz.jpg" alt="Andreas Vaz" /> 
     <div class="meta">
       <div class="name">Andreas Vaz</div>
       <div class="position">Meia · G3X FC</div>
       <span class="badge gold">Melhor do Mundial</span>
+    </div>
+     <div class="profile-socials">
+      <a class="instagram" href="https://www.instagram.com/andreas.vaz/?hl=pt-br" target="_blank" rel="noopener noreferrer">
+        📷 Instagram
+      </a>
     </div>
   </div>
 

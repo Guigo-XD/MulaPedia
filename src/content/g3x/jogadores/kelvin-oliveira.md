@@ -23,6 +23,9 @@ updatedDate: 2026-10-15
       <a class="youtube" href="https://www.youtube.com/@KelvinK9Oliveira" target="_blank" rel="noopener noreferrer">
         ▶️ YouTube
       </a>
+       <a class="instagram" href="https://www.instagram.com/kelvin_oliveira95" target="_blank" rel="noopener noreferrer">
+        📷 Insta
+      </a>
     </div>
   </div>
   <div class="player-profile-body">

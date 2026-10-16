@@ -7,11 +7,25 @@ updatedDate: 2026-10-15
 
 <div class="player-profile">
   <div class="player-profile-photo">
-    <div class="placeholder">🧠</div>
+    <img src="/players/vvv.jpg" alt="Velho Vamp" /> 
     <div class="meta">
       <div class="name">Velho Vamp</div>
       <div class="position">Técnico · G3X FC</div>
       <span class="badge gold">Mundial 2026</span>
+    </div>
+     <div class="profile-socials">
+      <a class="twitch" href="https://www.twitch.tv/velhovamp" target="_blank" rel="noopener noreferrer">
+        🟣 Twitch
+      </a>
+      <a class="kick" href="https://kick.com/velhovamp" target="_blank" rel="noopener noreferrer">
+        🟢 Kick
+      </a>
+      <a class="youtube" href="https://www.youtube.com/@VelhoVamp" target="_blank" rel="noopener noreferrer">
+        ▶️ YouTube
+      </a>
+       <a class="instagram" href="https://www.instagram.com/velhovamp1" target="_blank" rel="noopener noreferrer">
+        📷 Insta
+      </a>
     </div>
   </div>
   <div class="player-profile-body">

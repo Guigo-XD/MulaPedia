@@ -2,7 +2,7 @@
 title: "Ale Apoka"
 description: "Auxiliar Técnico"
 section: "G3X"
-updatedDate: 2026-10-14
+updatedDate: 2026-10-16
 ---
 
 <div class="player-profile">
@@ -14,6 +14,20 @@ updatedDate: 2026-10-14
     <div class="meta">
       <div class="name">Ale Apoka</div>
       <div class="position">Auxiliar Técnico · G3X FC</div>
+    </div>
+    <div class="profile-socials">
+      <a class="twitch" href="https://www.twitch.tv/ale_apoka" target="_blank" rel="noopener noreferrer">
+        🟣 Twitch
+      </a>
+      <a class="kick" href="https://kick.com/ale_apoka" target="_blank" rel="noopener noreferrer">
+        🟢 Kick
+      </a>
+      <a class="youtube" href="https://www.youtube.com/@AleAPOKA" target="_blank" rel="noopener noreferrer">
+        ▶️ YouTube
+      </a>
+       <a class="instagram" href="https://www.instagram.com/ale_apoka" target="_blank" rel="noopener noreferrer">
+        📷 Insta
+      </a>
     </div>
   </div>
 
