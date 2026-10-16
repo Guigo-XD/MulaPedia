@@ -42,7 +42,15 @@ const currentPath = Astro.url.pathname;
           <span>Conhecimento de toda a Tribo</span>
         </div>
       </a>
-
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
       <Search />
 
       <a href="/tribo/cultura" class="tribo-btn">
@@ -283,5 +291,77 @@ const currentPath = Astro.url.pathname;
         Projeto conceitual — não oficial.
       </div>
     </footer>
+    <!-- Menu mobile -->
+    <div class="mobile-nav-backdrop" id="menu-backdrop"></div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-header">
+        <strong>🧭 Explorar a Tribo</strong>
+        <button
+          type="button"
+          class="mobile-nav-close"
+          id="menu-close"
+          aria-label="Fechar menu">✕</button
+        >
+      </div>
+
+      <a href="/">🏠 Início</a>
+      <a href="/areas">⭐ Áreas</a>
+      <a href="/artigos">📄 Artigos</a>
+
+      <div class="sidebar-title">G3X</div>
+      <a href="/g3x/historia"><span class="icon">📜</span> História</a>
+      <a href="/g3x/elencos"><span class="icon">👥</span> Elencos</a>
+      <a href="/g3x/elenco"><span class="icon">👑</span> Elenco Kings</a>
+      <a href="/g3x/resultados"><span class="icon">📊</span> Resultados</a>
+
+      <div class="sidebar-title">Modalidades</div>
+      <a href="/kings-league/overview"
+        ><span class="icon">👑</span> Kings League</a
+      >
+      <a href="/cs2/overview"><span class="icon">🔫</span> CS2</a>
+      <a href="/cs2/mapas"><span class="icon">🗺️</span> Mapas</a>
+      <a href="/g3x/elenco-queens"><span class="icon">👑</span> Queens League</a
+      >
+
+      <div class="sidebar-title">Tribo</div>
+      <a href="/gaules/biografia"><span class="icon">🎙️</span> Gaules</a>
+      <a href="/tribo/cultura"><span class="icon">❤️</span> Cultura</a>
+      <a href="/glossario"><span class="icon">📖</span> Glossário</a>
+      <a href="/tribo/socio-sofredor"
+        ><span class="icon">🎫</span> Sócio Sofredor</a
+      >
+    </nav>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const closeBtn = document.getElementById("menu-close");
+      const nav = document.getElementById("mobile-nav");
+      const backdrop = document.getElementById("menu-backdrop");
+
+      function openMenu() {
+        nav?.classList.add("open");
+        backdrop?.classList.add("open");
+        document.body.classList.add("menu-open");
+        nav?.setAttribute("aria-hidden", "false");
+        toggle?.setAttribute("aria-expanded", "true");
+      }
+
+      function closeMenu() {
+        nav?.classList.remove("open");
+        backdrop?.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        nav?.setAttribute("aria-hidden", "true");
+        toggle?.setAttribute("aria-expanded", "false");
+      }
+
+      toggle?.addEventListener("click", openMenu);
+      closeBtn?.addEventListener("click", closeMenu);
+      backdrop?.addEventListener("click", closeMenu);
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+    </script>
   </body>
 </html>
