@@ -12,20 +12,10 @@ Counter-Strike é uma série de jogos eletrônicos multijogador de tiro em prime
 
 Gaules começou no CS 1.6 como jogador profissional, fundou a g3x, foi técnico campeão mundial com a MIBR e se tornou o maior streamer de Counter-Strike do Brasil.
 
-## Dream Team G3X (montado por Gaules em 2026)
+## Nesta seção
 
-<div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
- <!-- CS2 -->
-  <a href="/g3x/elenco-cs2" class="card" style="text-decoration:none;color:inherit;">
-    <div class="card-img-link" style="height:100px;background:linear-gradient(135deg,#1e3a8a,#0f172a);display:flex;align-items:center;justify-content:center;font-size:40px;">
-      🔫
-    </div>
-    <div class="card-body">
-      <h4>Counter-Strike 2 (Não oficial)</h4>
-      <p>Line-up e Dream Team ligados ao G3X / Gaules no CS2.</p>
-      <div class="card-links">
-        <span style="color:var(--accent);font-size:13px;">Ver elenco →</span>
-      </div>
-    </div>
-  </a>
+<div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+  <a href="/cs2/mapas" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>🗺️ Mapas</h4><p>Active Duty explicado.</p></div></a>
+  <a href="/g3x/elenco-cs2" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>🔫 Elenco CS2</h4><p>Dream Team e cabine.</p></div></a>
+  <a href="/gaules/biografia" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>🎙️ Gaules</h4><p>Do 1.6 às lives.</p></div></a>
 </div>

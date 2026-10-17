@@ -19,23 +19,45 @@ updatedDate: 2026-10-15
       </a>
     </div>
   </div>
-  <div class="player-profile-body">
+   <div class="player-profile-body">
     <h2>Biografia</h2>
     <p>
-      Aleix Martí é atacante do G3X FC, conhecido pela fase goleadora na
-      <strong>Kings League Spain</strong> (36 gols) antes de reforçar o elenco do time do povo
-      para as competições no Brasil.
+      <strong>Aleix Martí</strong> chegou ao radar da Tribo como atacante de produção
+      absurda na <strong>Kings League Spain</strong>, onde somou uma marca de
+      <strong>36 gols</strong> e se firmou como nome de peso do circuito europeu da liga.
+    </p>
+    <p>
+      No G3X FC, representa o perfil de reforço ofensivo para as campanhas no Brasil:
+      finalização, movimento na área e bagagem de quem já foi referência de artilharia
+      em outro dos principais mercados da Kings. É o tipo de contratação que a comunidade
+      lê como “ambição de placar” — alguém contratado para decidir jogos.
+    </p>
+    <p>
+      Aleix aparece ao lado de Kelvin e Danilo Silva no setor de ataque, no momento em que o clube defende o status
+      de campeão mundial e reconstrói o plantel via Draft e mercado.
     </p>
     <div class="stats-row">
-      <div class="stat-box"><div class="value">Ataque</div><div class="label">Posição</div></div>
-      <div class="stat-box"><div class="value">36</div><div class="label">Gols Spain</div></div>
-      <div class="stat-box"><div class="value">G3X</div><div class="label">Clube</div></div>
+      <div class="stat-box">
+        <div class="value">Ataque</div>
+        <div class="label">Posição</div>
+      </div>
+      <div class="stat-box">
+        <div class="value">36</div>
+        <div class="label">Gols Spain</div>
+      </div>
+      <div class="stat-box">
+        <div class="value">G3X</div>
+        <div class="label">Clube</div>
+      </div>
     </div>
     <h2>Destaques</h2>
     <ul class="highlights">
-      <li>Artilheiro de destaque na Kings League Spain</li>
-      <li>Reforço ofensivo do G3X FC</li>
-      <li>Presença fixa no ataque da Kings Cup</li>
+      <li>Grande fase goleadora na Kings League Spain (36 gols)</li>
+      <li>Atacante do G3X FC nas competições brasileiras</li>
+      <li>Perfil de finalizador e referência de área</li>
+      <li>Reforço de nome internacional no “time do povo”</li>
     </ul>
   </div>
 </div>
+
+**Links:** [Elenco](/g3x/elenco) · [Elencos](/g3x/elencos) · [Kings League](/kings-league/overview)

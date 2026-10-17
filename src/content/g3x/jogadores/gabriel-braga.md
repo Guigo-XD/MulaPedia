@@ -21,7 +21,17 @@ updatedDate: 2026-10-15
   </div>
   <div class="player-profile-body">
     <h2>Biografia</h2>
-    <p>Gabriel Braga é goleiro do G3X FC no elenco da Kings Cup Brazil 2026.</p>
+    <p>
+      <strong>Gabriel Braga</strong> é goleiro do G3X FC no ciclo da
+      <strong>Kings Cup Brazil 2026</strong>. Divide o setor com Josildo Barata na
+      lista de goleiros do plantel organizado após o título mundial e o Draft.
+    </p>
+    <p>
+      Na Kings League, o goleiro lida com jogo rápido, placares abertos e momentos
+      especiais do regulamento. Braga integra a profundidade de elenco que o G3X
+      busca para a disputa doméstica, com a meta de manter o padrão de um clube
+      campeão do mundo.
+    </p>
     <div class="stats-row">
       <div class="stat-box"><div class="value">GOL</div><div class="label">Posição</div></div>
       <div class="stat-box"><div class="value">2026</div><div class="label">Kings Cup</div></div>
@@ -29,7 +39,10 @@ updatedDate: 2026-10-15
     </div>
     <h2>Destaques</h2>
     <ul class="highlights">
-      <li>Goleiro do elenco Kings Cup Brazil 2026</li>
+      <li>Goleiro do elenco G3X FC — Kings Cup Brazil 2026</li>
+      <li>Parte do setor defensivo do time do povo</li>
     </ul>
   </div>
 </div>
+
+**Links:** [Elenco](/g3x/elenco) · [Elencos](/g3x/elencos)

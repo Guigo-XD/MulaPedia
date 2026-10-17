@@ -22,8 +22,15 @@ updatedDate: 2026-10-15
   <div class="player-profile-body">
     <h2>Biografia</h2>
     <p>
-      Wembley Luiz é defensor do G3X FC e integrou o elenco campeão da
-      Kings World Cup Clubs 2026 em Milão.
+      <strong>Wembley Luiz</strong> é defensor do G3X FC e um dos nomes da linha
+      defensiva no elenco <strong>campeão da Kings World Cup Clubs 2026</strong>.
+      Enquanto a história do título destaca os 14 gols de Kelvin e o MVP de Andreas Vaz,
+      a campanha invicta também se sustenta em quem segura o 7x7 no fundo.
+    </p>
+    <p>
+      No pós-Mundial, segue ligado ao plantel da Kings Cup Brazil como peça da zaga
+      do time presidido por Gaules e K9 — a geração que colocou o G3X no topo do mundo
+      no formato Kings.
     </p>
     <div class="stats-row">
       <div class="stat-box"><div class="value">Zaga</div><div class="label">Posição</div></div>
@@ -32,8 +39,11 @@ updatedDate: 2026-10-15
     </div>
     <h2>Destaques</h2>
     <ul class="highlights">
-      <li>Campeão mundial 2026</li>
+      <li>Campeão mundial — Kings World Cup Clubs 2026</li>
       <li>Defensor do G3X FC</li>
+      <li>Integrante da campanha invicta em Milão</li>
     </ul>
   </div>
 </div>
+
+**Links:** [Elenco](/g3x/elenco) · [Resultados](/g3x/resultados) · [Linha do tempo](/g3x/linha-do-tempo)

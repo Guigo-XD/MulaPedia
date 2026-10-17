@@ -12,28 +12,121 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { Content } = await render(page);
+
+/** Nome amigável de cada segmento */
+const LABELS: Record<string, string> = {
+  g3x: 'G3X',
+  'kings-league': 'Kings League',
+  cs2: 'CS2',
+  gaules: 'Gaules',
+  tribo: 'Tribo',
+  jogadores: 'Jogadores',
+  historia: 'História',
+  elenco: 'Elenco Kings',
+  elencos: 'Elencos',
+  'elenco-cs2': 'Elenco CS2',
+  'elenco-queens': 'Elenco Queens',
+  resultados: 'Resultados',
+  titulos: 'Títulos',
+  'linha-do-tempo': 'Linha do tempo',
+  overview: 'Visão geral',
+  regras: 'Regras',
+  mapas: 'Mapas',
+  biografia: 'Biografia',
+  cultura: 'Cultura',
+  faq: 'FAQ',
+  'socio-sofredor': 'Sócio Sofredor',
+  glossario: 'Glossário',
+  racing: 'G3X Racing',
+};
+
+/**
+ * Para segmentos que NÃO têm página própria,
+ * aponta para um hub que existe de verdade.
+ * Se não estiver aqui e não for a página atual → não vira link.
+ */
+const HUB_HREF: Record<string, string> = {
+  g3x: '/g3x/historia',
+  'kings-league': '/kings-league/overview',
+  cs2: '/cs2/overview',
+  gaules: '/gaules/biografia',
+  tribo: '/tribo/cultura',
+  jogadores: '/g3x/elenco', // pasta sem index → volta pro elenco
+};
+
+const segments = page.id.split('/').filter(Boolean);
+
+const breadcrumbs = [
+  { label: 'Início', href: '/' as string | null },
+  ...segments.map((seg, i) => {
+    const isLast = i === segments.length - 1;
+    const path = '/' + segments.slice(0, i + 1).join('/');
+
+    const label =
+      LABELS[seg] ||
+      seg
+        .split('-')
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
+
+    // Último item: texto atual (usa title do MD)
+    if (isLast) {
+      return { label: page.data.title || label, href: null };
+    }
+
+    // Segmento intermediário: só linka se houver hub conhecido
+    // ou se o path completo for uma página “folha” conhecida via HUB
+    const href = HUB_HREF[seg] ?? null;
+
+    return { label, href };
+  }),
+];
 ---
 
 <Layout title={page.data.title} description={page.data.description}>
-  <button type="button" class="back-btn" id="btn-voltar">
-  ← Voltar
-</button>
+  <button type="button" class="back-btn" id="btn-voltar">← Voltar</button>
+
+  <nav class="breadcrumbs" aria-label="Trilha de navegação">
+    {breadcrumbs.map((crumb, i) => (
+      <span class="breadcrumbs-item">
+        {i > 0 && <span class="breadcrumbs-sep">›</span>}
+        {crumb.href ? (
+          <a href={crumb.href}>{crumb.label}</a>
+        ) : (
+          <span
+            class={i === breadcrumbs.length - 1 ? 'breadcrumbs-current' : 'breadcrumbs-muted'}
+            aria-current={i === breadcrumbs.length - 1 ? 'page' : undefined}
+          >
+            {crumb.label}
+          </span>
+        )}
+      </span>
+    ))}
+  </nav>
+
+  <article class="content-page" data-pagefind-body>
+    <h1>{page.data.title}</h1>
+    {page.data.description && (
+      <p class="subtitle">{page.data.description}</p>
+    )}
+    <Content />
+  </article>
+</Layout>
 
 <script>
-  const btn = document.getElementById("btn-voltar");
+  const btn = document.getElementById('btn-voltar');
   if (btn) {
-    btn.addEventListener("click", () => {
-      // Se veio de outra página do site, volta para ela
+    btn.addEventListener('click', () => {
       if (window.history.length > 1 && document.referrer) {
-        const ref = new URL(document.referrer);
-        // Só volta se o referrer for do mesmo site
-        if (ref.origin === window.location.origin) {
-          window.history.back();
-          return;
-        }
+        try {
+          const ref = new URL(document.referrer);
+          if (ref.origin === window.location.origin) {
+            window.history.back();
+            return;
+          }
+        } catch {}
       }
-      // Fallback: início
-      window.location.href = "/";
+      window.location.href = '/';
     });
   }
 </script>

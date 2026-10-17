@@ -31,25 +31,46 @@ updatedDate: 2026-10-15
   <div class="player-profile-body">
     <h2>Biografia</h2>
     <p>
-      <strong>Kelvin Oliveira (K9)</strong> é presidente do G3X FC ao lado de Gaules e um dos
-      nomes mais marcantes da história recente do clube. Atacante decisivo, foi o
-      <strong>artilheiro da Kings World Cup Clubs 2026</strong> com 14 gols na campanha do título em Milão.
+      <strong>Kelvin Oliveira</strong>, conhecido como <strong>K9</strong>, é uma das figuras
+      centrais do G3X FC na Kings League. Ao lado de Gaules, divide a
+      <strong>presidência</strong> do clube e, em campo, tornou-se o símbolo ofensivo
+      da campanha mais importante da história recente do time do povo.
     </p>
     <p>
-      Em setembro de 2026 passou por cirurgia no quadril e ficou afastado da Kings Cup Brazil,
-      mantendo o papel de liderança na presidência do projeto.
+      Na <strong>Kings World Cup Clubs 2026</strong>, em Milão, foi o
+      <strong>artilheiro do torneio com 14 gols</strong>, comandando o ataque na campanha
+      <strong>100% invicta</strong> que terminou com o título mundial — final
+      <strong>9×5</strong> sobre o Alpak FC, em 1º de agosto de 2026.
+    </p>
+    <p>
+      Em setembro de 2026 passou por <strong>cirurgia no quadril</strong> e ficou afastado
+      das disputas da Kings Cup Brazil, sem deixar o papel de liderança no projeto.
+      Para a Tribo, K9 representa ambição dentro de campo e identidade fora dele:
+      presidente que veste a camisa e decide jogos grandes.
     </p>
     <div class="stats-row">
-      <div class="stat-box"><div class="value">Ataque</div><div class="label">Posição</div></div>
-      <div class="stat-box"><div class="value">14</div><div class="label">Gols Mundial</div></div>
-      <div class="stat-box"><div class="value">G3X</div><div class="label">Clube</div></div>
+      <div class="stat-box">
+        <div class="value">Ataque</div>
+        <div class="label">Posição</div>
+      </div>
+      <div class="stat-box">
+        <div class="value">14</div>
+        <div class="label">Gols no Mundial</div>
+      </div>
+      <div class="stat-box">
+        <div class="value">2026</div>
+        <div class="label">Campeão</div>
+      </div>
     </div>
     <h2>Destaques</h2>
     <ul class="highlights">
-      <li>Presidente do G3X FC com Gaules</li>
+      <li>Presidente do G3X FC ao lado de Gaules</li>
       <li>Artilheiro da Kings World Cup Clubs 2026 (14 gols)</li>
-      <li>Campeão mundial em Milão (9×5 Alpak FC)</li>
-      <li>Símbolo ofensivo do “time do povo”</li>
-    </ul>
+      <li>Campeão mundial em Milão — campanha invicta</li>
+      <li>Referência ofensiva e de liderança do “time do povo”</li>
+      <li>Presença constante na narrativa da Tribo e das lives</li>
+    </ul>   
   </div>
 </div>
+
+**Links:** [Elenco](/g3x/elenco) · [Resultados](/g3x/resultados) · [Gaules](/gaules/biografia) · [Linha do tempo](/g3x/linha-do-tempo)

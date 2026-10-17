@@ -94,11 +94,6 @@ const currentPath = Astro.url.pathname;
         href="/tribo/cultura"
         class={currentPath.includes("/tribo") ? "active" : ""}>👥 Comunidade</a
       >
-      <a
-        href="/glossario"
-        class={currentPath.includes("/glossario") ? "active" : ""}
-        >📖 Glossário</a
-      >
       <a href="/artigos">📄 Artigos</a>
     </nav>
 
@@ -108,39 +103,78 @@ const currentPath = Astro.url.pathname;
         showSidebars && (
           <aside class="sidebar-left">
             <div class="sidebar-title">🧭 Explorar a Tribo</div>
+
+            <a href="/">
+              <span class="icon">🏠</span> Início
+            </a>
+            <a href="/areas">
+              <span class="icon">⭐</span> Áreas
+            </a>
+            <a href="/artigos">
+              <span class="icon">📄</span> Artigos
+            </a>
+
+            <div class="sidebar-title" style="margin-top:16px;">
+              🎮 G3X
+            </div>
             <a href="/g3x/historia">
-              <span class="icon">📜</span> Histórico
+              <span class="icon">📜</span> História
             </a>
-            <a href="/tribo/socio-sofredor">🎫 Sócio Sofredor</a>
             <a href="/g3x/elencos">
-              <span class="icon">📋</span> Elencos
-            </a>
-            <a href="/kings-league/overview">
-              <span class="icon">🏆</span> Torneios
+              <span class="icon">👥</span> Elencos
             </a>
             <a href="/g3x/resultados">
               <span class="icon">📊</span> Resultados
             </a>
-            <a href="/glossario">
-              <span class="icon">😂</span> Memes e bordões
-            </a>
-            <a href="/cs2/overview">
-              <span class="icon">📘</span> Guias de CS2
-            </a>
-            <a href="/tribo/cultura">
-              <span class="icon">❤️</span> Cultura da Tribo
+            <a href="/g3x/titulos">
+              <span class="icon">🏆</span> Títulos
             </a>
 
-            <div style="margin-top:32px;padding:18px;background:#1e293b;border-radius:12px;text-align:center;">
-              <div style="font-size:26px;font-weight:800;color:#60a5fa;letter-spacing:1px;">
+            <div class="sidebar-title" style="margin-top:16px;">
+              🏆 Competições
+            </div>
+            <a href="/kings-league/overview">
+              <span class="icon">👑</span> Kings League
+            </a>
+            <a href="/g3x/racing">
+              <span class="icon">🏎️</span> G3X Racing
+            </a>
+            <a href="/cs2/overview">
+              <span class="icon">🔫</span> CS2
+            </a>
+            <a href="/g3x/elenco-queens">
+              <span class="icon">👑</span> Queens League
+            </a>
+
+            <div class="sidebar-title" style="margin-top:16px;">
+              ❤️ Tribo
+            </div>
+            <a href="/gaules/biografia">
+              <span class="icon">🎙️</span> Gaules
+            </a>
+            <a href="/tribo/cultura">
+              <span class="icon">💬</span> Cultura
+            </a>
+            <a href="/tribo/faq">
+              <span class="icon">❓</span> FAQ
+            </a>
+            <a href="/glossario">
+              <span class="icon">📖</span> Glossário
+            </a>
+            <a href="/tribo/socio-sofredor">
+              <span class="icon">🎫</span> Sócio Sofredor
+            </a>
+
+            <div style="margin-top:28px;padding:16px;background:#1e293b;border-radius:12px;text-align:center;">
+              <div style="font-size:22px;font-weight:800;color:#60a5fa;">
                 TRIBO
               </div>
-              <p style="font-size:12px;color:#94a3b8;margin-top:10px;line-height:1.5;">
+              <p style="font-size:12px;color:#94a3b8;margin-top:8px;line-height:1.45;">
                 É mais que um time.
                 <br />
                 <strong style="color:#fbbf24">É uma família.</strong>
               </p>
-              <p style="font-size:11px;color:#64748b;margin-top:10px;">
+              <p style="font-size:11px;color:#64748b;margin-top:8px;">
                 “A Tribo cuida da Tribo”
               </p>
             </div>
@@ -309,28 +343,24 @@ const currentPath = Astro.url.pathname;
       <a href="/areas">⭐ Áreas</a>
       <a href="/artigos">📄 Artigos</a>
 
-      <div class="sidebar-title">G3X</div>
-      <a href="/g3x/historia"><span class="icon">📜</span> História</a>
-      <a href="/g3x/elencos"><span class="icon">👥</span> Elencos</a>
-      <a href="/g3x/elenco"><span class="icon">👑</span> Elenco Kings</a>
-      <a href="/g3x/resultados"><span class="icon">📊</span> Resultados</a>
+      <div class="sidebar-title">🎮 G3X</div>
+      <a href="/g3x/historia">📜 História</a>
+      <a href="/g3x/elencos">👥 Elencos</a>
+      <a href="/g3x/resultados">📊 Resultados</a>
+      <a href="/g3x/titulos">🏆 Títulos</a>
 
-      <div class="sidebar-title">Modalidades</div>
-      <a href="/kings-league/overview"
-        ><span class="icon">👑</span> Kings League</a
-      >
-      <a href="/cs2/overview"><span class="icon">🔫</span> CS2</a>
-      <a href="/cs2/mapas"><span class="icon">🗺️</span> Mapas</a>
-      <a href="/g3x/elenco-queens"><span class="icon">👑</span> Queens League</a
-      >
+      <div class="sidebar-title">🏆 Competições</div>
+      <a href="/kings-league/overview">👑 Kings League</a>
+      <a href="/g3x/racing">🏎️ G3X Racing</a>
+      <a href="/cs2/overview">🔫 CS2</a>
+      <a href="/g3x/elenco-queens">👑 Queens League</a>
 
-      <div class="sidebar-title">Tribo</div>
-      <a href="/gaules/biografia"><span class="icon">🎙️</span> Gaules</a>
-      <a href="/tribo/cultura"><span class="icon">❤️</span> Cultura</a>
-      <a href="/glossario"><span class="icon">📖</span> Glossário</a>
-      <a href="/tribo/socio-sofredor"
-        ><span class="icon">🎫</span> Sócio Sofredor</a
-      >
+      <div class="sidebar-title">❤️ Tribo</div>
+      <a href="/gaules/biografia">🎙️ Gaules</a>
+      <a href="/tribo/cultura">💬 Cultura</a>
+      <a href="/tribo/faq">❓ FAQ</a>
+      <a href="/glossario">📖 Glossário</a>
+      <a href="/tribo/socio-sofredor">🎫 Sócio Sofredor</a>
     </nav>
 
     <script>

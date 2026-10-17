@@ -20,7 +20,17 @@ updatedDate: 2026-10-15
   </div>
   <div class="player-profile-body">
     <h2>Biografia</h2>
-    <p>Marquinhos Samora é meio-campista do G3X FC no elenco da Kings Cup Brazil 2026.</p>
+    <p>
+      <strong>Marquinhos Samora</strong> é meio-campista do G3X FC no elenco da
+      Kings Cup Brazil 2026. Atua no mesmo setor de <strong>Andreas Vaz</strong>,
+      campeão e melhor jogador do Mundial — um meio-campo que a Tribo acompanha de
+      perto por ser o motor do time do povo.
+    </p>
+    <p>
+      Samora representa a profundidade de elenco no setor: opções para rotação,
+      intensidade e ligação entre defesa e ataque no 7x7. Na wiki, fica registrado
+      como peça do meio-campo do ciclo pós-título mundial.
+    </p>
     <div class="stats-row">
       <div class="stat-box"><div class="value">Meia</div><div class="label">Posição</div></div>
       <div class="stat-box"><div class="value">2026</div><div class="label">Kings Cup</div></div>
@@ -29,6 +39,9 @@ updatedDate: 2026-10-15
     <h2>Destaques</h2>
     <ul class="highlights">
       <li>Meia do elenco G3X FC</li>
+      <li>Setor de meio-campo da Kings Cup Brazil 2026</li>
     </ul>
   </div>
 </div>
+
+**Links:** [Elenco](/g3x/elenco)

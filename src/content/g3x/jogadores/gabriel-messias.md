@@ -20,7 +20,17 @@ updatedDate: 2026-10-15
   </div>
   <div class="player-profile-body">
     <h2>Biografia</h2>
-    <p>Gabriel Messias é defensor do G3X FC no elenco da Kings Cup Brazil 2026.</p>
+    <p>
+      <strong>Gabriel Messias</strong> é defensor do G3X FC no elenco da
+      <strong>Kings Cup Brazil 2026</strong>. Compõe a zaga ao lado de nomes como
+      Wembley Luiz e Marcelo Vilella, no momento em que o clube equilibra o legado
+      de campeão mundial com a montagem do plantel para o calendário brasileiro.
+    </p>
+    <p>
+      No fut7 da Kings, o defensor precisa sair jogando, cobrir espaços e sobreviver
+      a jogos de alto placar. Messias entra na wiki como parte dessa estrutura
+      defensiva do time do povo na temporada.
+    </p>
     <div class="stats-row">
       <div class="stat-box"><div class="value">Zaga</div><div class="label">Posição</div></div>
       <div class="stat-box"><div class="value">2026</div><div class="label">Kings Cup</div></div>
@@ -28,7 +38,10 @@ updatedDate: 2026-10-15
     </div>
     <h2>Destaques</h2>
     <ul class="highlights">
-      <li>Defensor do elenco Kings Cup Brazil 2026</li>
+      <li>Defensor do elenco G3X FC — Kings Cup Brazil 2026</li>
+      <li>Setor defensivo do time do povo</li>
     </ul>
   </div>
 </div>
+
+**Links:** [Elenco](/g3x/elenco)

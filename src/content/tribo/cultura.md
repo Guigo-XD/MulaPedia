@@ -139,6 +139,16 @@ A “casa” da Tribo são as lives do Gaules: CS2, Kings League, resenha e mome
 
 ---
 
+## Nesta seção
+
+<div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+  <a href="/tribo/faq" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>❓ FAQ</h4><p>Dúvidas frequentes.</p></div></a>
+  <a href="/glossario" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>📖 Glossário</h4><p>Bordões da Tribo.</p></div></a>
+  <a href="/tribo/socio-sofredor" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>🎫 Sócio Sofredor</h4><p>Plataforma dos sócios.</p></div></a>
+  <a href="/gaules/biografia" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>🎙️ Gaules</h4><p>Biografia completa.</p></div></a>
+</div>
+
+---
 ## Links rápidos
 
 - [🎙️ Biografia do Gaules](/gaules/biografia)

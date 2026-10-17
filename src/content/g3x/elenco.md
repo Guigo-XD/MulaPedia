@@ -2,7 +2,7 @@
 title: "Elenco G3X FC"
 description: "Elenco completo da Kings Cup Brazil 2026"
 section: "G3X"
-updatedDate: 2026-10-14
+updatedDate: 2026-10-16
 ---
 
 <div class="info-box">
@@ -48,6 +48,7 @@ updatedDate: 2026-10-14
     <div class="info">
       <div class="name">Ale Apoka</div>
       <div class="position">Auxiliar Técnico</div>
+      <span class="badge gold">Aniversariante </span>
     </div>
 </a>
 
@@ -79,6 +80,7 @@ updatedDate: 2026-10-14
       <div class="name">Gabriel Braga</div>
       <div class="position">Goleiro</div>
       <span class="badge gold">Mundial 2026</span>
+         <span class="badge">Draft</span>
     </div>
  </a>
 
@@ -113,6 +115,7 @@ updatedDate: 2026-10-14
     <div class="info">
       <div class="name">Gabriel Messias</div>
       <div class="position">Defensor</div>
+       <span class="badge">Draft</span>
     </div>
   </a>
 
@@ -121,6 +124,7 @@ updatedDate: 2026-10-14
     <div class="info">
       <div class="name">Marcelo Vilella</div>
       <div class="position">Defensor</div>
+       <span class="badge">Draft</span>
     </div>
   </a>
 
@@ -145,6 +149,7 @@ updatedDate: 2026-10-14
     <div class="info">
       <div class="name">Marquinhos Samora</div>
       <div class="position">Meia</div>
+        <span class="badge gold">WC</span>
     </div>
   </a>
 
@@ -153,6 +158,7 @@ updatedDate: 2026-10-14
     <div class="info">
       <div class="name">Thiago TH</div>
       <div class="position">Meia</div>
+         <span class="badge">Draft</span>
     </div>
 </a>
 
@@ -161,6 +167,7 @@ updatedDate: 2026-10-14
     <div class="info">
       <div class="name">Dudu Barbosa</div>
       <div class="position">Meia</div>
+         <span class="badge">Draft</span>
     </div>
   </a>
 
@@ -194,6 +201,7 @@ updatedDate: 2026-10-14
     <div class="info">
       <div class="name">Marcos Niniu</div>
       <div class="position">Atacante</div>
+        <span class="badge gold">WC</span>
     </div>
    </a>
 

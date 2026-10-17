@@ -56,6 +56,16 @@ updatedDate: 2026-10-15
     </div>
   </a>
 
+  <a href="/g3x/racing" class="card" style="text-decoration:none;color:inherit;">
+   <div class="card-img-link" style="height:100px;background:linear-gradient(135deg,#4c1d95,#831843);display:flex;align-items:center;justify-content:center;font-size:40px;">
+      🏎️
+    </div>
+  <div class="card-body">
+    <h4> G3X Racing</h4>
+    <p>Automobilismo · Turismo Nacional</p>
+  </div>
+</a>
+
 </div>
 
 ---

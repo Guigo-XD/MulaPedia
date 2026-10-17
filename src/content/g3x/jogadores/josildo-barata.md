@@ -22,8 +22,15 @@ updatedDate: 2026-10-15
   <div class="player-profile-body">
     <h2>Biografia</h2>
     <p>
-      Josildo Barata é goleiro do G3X FC e fez parte do elenco <strong>campeão mundial</strong>
-      da Kings World Cup Clubs 2026 em Milão.
+      <strong>Josildo Barata</strong> é goleiro do G3X FC e faz parte do grupo que
+      trouxe para o clube o título mais importante da era Kings League:
+      a <strong>Kings World Cup Clubs 2026</strong>, em Milão.
+    </p>
+    <p>
+      Em um time lembrado pelos placares elásticos do ataque, a base começa atrás —
+      e Josildo integra a linha de quem sustentou a campanha <strong>invicta</strong>
+      até a final 9×5 contra o Alpak FC. Na Kings Cup Brazil, segue no radar do
+      elenco de goleiros do time do povo.
     </p>
     <div class="stats-row">
       <div class="stat-box"><div class="value">GOL</div><div class="label">Posição</div></div>
@@ -32,8 +39,11 @@ updatedDate: 2026-10-15
     </div>
     <h2>Destaques</h2>
     <ul class="highlights">
-      <li>Campeão Kings World Cup Clubs 2026</li>
+      <li>Campeão da Kings World Cup Clubs 2026</li>
       <li>Goleiro do elenco G3X FC</li>
+      <li>Parte da campanha invicta em milão</li>
     </ul>
   </div>
 </div>
+
+**Links:** [Elenco](/g3x/elenco) · [Resultados](/g3x/resultados)
